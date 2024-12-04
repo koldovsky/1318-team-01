@@ -33,3 +33,4 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Ivashchenko Olena
 - Kopka Yurii
 - Ivanova Antonina
+- Fedosenko Maksym
