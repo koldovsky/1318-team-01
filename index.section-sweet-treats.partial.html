@@ -1,13 +1,17 @@
 <section class="sweet-treats">
-  <div>
-    <p>Sweet treats</p>
-    <p>Your Daily Dose of Pastry Baked with Care</p>
-    <span>.</span>
-    <p>The best pastry for a true connoisseur.</p>
+  <div class="sweet-treats__header">
+    <p class="sweet-treats__title">Sweet treats</p>
+    <p class="sweet-treats__subtitle">
+      Your Daily Dose of Pastry Baked with Care
+    </p>
+    <span class="sweet-treats__separator">.</span>
+    <p class="sweet-treats__description">
+      The best pastry for a true connoisseur.
+    </p>
   </div>
-  <div>
-    <button>
-      <svg class="arrow-svg_1j4" viewBox="0 0 30 30">
+  <div class="sweet-treats__content">
+    <button class="sweet-treats__button">
+      <svg class="sweet-treats__icon" viewBox="0 0 30 30">
         <defs>
           <path
             d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
@@ -21,110 +25,135 @@
         ></use>
       </svg>
     </button>
-    <div>
-      <article>
-        <div>
+    <div class="sweet-treats__list">
+      <article class="sweet-treats__card product-card">
+        <div class="product-card__image-wrapper">
           <img
+            class="product-card__image"
             width="40"
             src="img/sweat-treats/carousel-products-cake.jpg"
             alt="Honey Almond Cake"
           />
         </div>
-        <h2>Honey Almond Cake</h2>
-        <div>
-          <p><span>Weight: </span>120g</p>
-          <p><span>Price: </span>$4.50</p>
+        <h2 class="product-card__title">Honey Almond Cake</h2>
+        <div class="product-card__details">
+          <p class="product-card__detail">
+            <span class="product-card__label">Weight: </span>120g
+          </p>
+          <p class="product-card__detail">
+            <span class="product-card__label">Price: </span>$4.50
+          </p>
         </div>
-        <div>
+        <div class="product-card__description">
           <p>
-            <span>Ingredients: </span>Almond flour, butter, sugar, eggs, honey,
-            sliced almonds.
+            <span class="product-card__label">Ingredients: </span>Almond flour,
+            butter, sugar, eggs, honey, sliced almonds.
           </p>
         </div>
       </article>
-      <article>
-        <div>
+      <article class="sweet-treats__card product-card">
+        <div class="product-card__image-wrapper">
           <img
+            class="product-card__image"
             width="40"
             src="img/sweat-treats/carousel-products-croissant.jpg"
             alt="Chocolate Croissant"
           />
         </div>
-        <h2>Chocolate Croissant</h2>
-        <div>
-          <p><span>Weight: </span>90g</p>
-          <p><span>Price: </span>$1.90</p>
+        <h2 class="product-card__title">Chocolate Croissant</h2>
+        <div class="product-card__details">
+          <p class="product-card__detail">
+            <span class="product-card__label">Weight: </span>90g
+          </p>
+          <p class="product-card__detail">
+            <span class="product-card__label">Price: </span>$1.90
+          </p>
         </div>
-        <div>
+        <div class="product-card__description">
           <p>
-            <span>Ingredients: </span>Flour, butter, salt, milk, sugar, yeast,
-            dark chocolate.
+            <span class="product-card__label">Ingredients: </span>Flour, butter,
+            salt, milk, sugar, yeast, dark chocolate.
           </p>
         </div>
       </article>
-      <article>
-        <div>
+      <article class="sweet-treats__card product-card">
+        <div class="product-card__image-wrapper">
           <img
+            class="product-card__image"
             width="40"
             src="img/sweat-treats/carousel-products-danish.jpg"
             alt="Berry Danish"
           />
         </div>
-        <h2>Berry Danish</h2>
-        <div>
-          <p><span>Weight: </span>80g</p>
-          <p><span>Price: </span>$2.50</p>
+        <h2 class="product-card__title">Berry Danish</h2>
+        <div class="product-card__details">
+          <p class="product-card__detail">
+            <span class="product-card__label">Weight: </span>80g
+          </p>
+          <p class="product-card__detail">
+            <span class="product-card__label">Price: </span>$2.50
+          </p>
         </div>
-        <div>
+        <div class="product-card__description">
           <p>
-            <span>Ingredients: </span>Puff pastry dough, sugar, cream cheese,
-            fresh berries.
+            <span class="product-card__label">Ingredients: </span>Puff pastry
+            dough, sugar, cream cheese, fresh berries.
           </p>
         </div>
       </article>
-      <article>
-        <div>
+      <article class="sweet-treats__card product-card">
+        <div class="product-card__image-wrapper">
           <img
+            class="product-card__image"
             width="40"
             src="img/sweat-treats/carousel-products-muffin.jpg"
-            alt="Blueberry Muffin"
+            alt="Berry Danish"
           />
         </div>
-        <h2>Blueberry Muffin</h2>
-        <div>
-          <p><span>Weight: </span>100g</p>
-          <p><span>Price: </span>$1.70</p>
+        <h2 class="product-card__title">Blueberry Muffin</h2>
+        <div class="product-card__details">
+          <p class="product-card__detail">
+            <span class="product-card__label">Weight: </span>100g
+          </p>
+          <p class="product-card__detail">
+            <span class="product-card__label">Price: </span>$1.70
+          </p>
         </div>
-        <div>
+        <div class="product-card__description">
           <p>
-            <span>Ingredients: </span>Flour, sugar, eggs, buttermilk, vanilla,
-            blueberries.
+            <span class="product-card__label">Ingredients: </span>Puff pastry
+            dough, sugar, cream cheese, fresh berries.
           </p>
         </div>
       </article>
-      <article>
-        <div>
+      <article class="sweet-treats__card product-card">
+        <div class="product-card__image-wrapper">
           <img
+            class="product-card__image"
             width="40"
             src="img/sweat-treats/carousel-products-roll.jpg"
             alt="Cinnamon Roll"
           />
         </div>
-        <h2>Cinnamon Roll</h2>
-        <div>
-          <p><span>Weight: </span>120g</p>
-          <p><span>Price: </span>$6.50</p>
+        <h2 class="product-card__title">Cinnamon Roll</h2>
+        <div class="product-card__details">
+          <p class="product-card__detail">
+            <span class="product-card__label">Weight: </span>120g
+          </p>
+          <p class="product-card__detail">
+            <span class="product-card__label">Price: </span>$6.50
+          </p>
         </div>
-        <div>
+        <div class="product-card__description">
           <p>
-            <span>Ingredients: </span>Flour, butter, sugar, cinnamon, eggs,
-            yeast, milk.
+            <span class="product-card__label">Ingredients: </span>Flour, butter,
+            sugar, cinnamon, eggs, yeast, milk.
           </p>
         </div>
       </article>
     </div>
-    <button>
-      <svg class="arrow-svg_1j4" viewBox="0 0 30 30">
+    <button class="sweet-treats__button">
+      <svg class="sweet-treats__icon" viewBox="0 0 30 30">
         <defs>
           <path
             d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
