@@ -46,4 +46,6 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Gromska Alina
 - Roterman Dmytro
 - Davidenko Felix
+- Valentyn Humen
+- Kalytyn Olha
   
