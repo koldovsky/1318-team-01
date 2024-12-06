@@ -13,8 +13,19 @@
     <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-
+    <header class="header">
+      <nav
+        class="header__nav"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header__nav.partial.html"
+      ></nav>
+      <div
+        class="header__hero"
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header__hero.partial.html"
+      ></div>
     </header>
     <main>
       <section class="main__aboutus"
@@ -43,6 +54,11 @@
         data-hx-get="index.section-recipes.partial.html"
       ></section>
       <!-- Назва: "index" тому що тільки на головній, "section" - частина, "sustainbaility" - її назва, "upper/lower" - її положення  -->
+      <section
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.section-exiting_events.partial.html"
+    ></section>
     </main>
     <footer></footer>
   </body>
