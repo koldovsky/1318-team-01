@@ -1,0 +1,17 @@
+@import "global.css";
+
+h2 {
+    color: rgb(228, 149, 76);
+}
+
+.main__aboutus-subtitle span {
+    color: rgb(228, 149, 76);
+}
+
+.main__aboutus-pdf img {
+    filter: invert(43%) sepia(77%) saturate(400%) hue-rotate(345deg) brightness(95%) contrast(88%);
+}
+
+.main__aboutus-pdf-text {
+    text-decoration: underline;
+}
