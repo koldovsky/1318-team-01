@@ -1,0 +1,119 @@
+.exciting-events {
+    background-color: #212020;
+}
+.exciting-events__wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.exciting-events__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exciting-event__name {
+    font-size: 38px;
+    color: var(--title-color);
+    font-weight: 400;
+    font-style: normal;
+}
+.exciting-events__paragraph {
+    margin-top: 20px;
+    font-size: 42px;
+}
+.exciting-events__dot {
+    color: var(--title-color);
+}
+.exciting-events__spikelets {
+    margin-top: 25px;
+    height: 32px;
+}
+.exciting-event__paragraph-utitle {
+    font-family: "Lato", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: 20px;
+    color: rgb(215, 215, 215);
+}
+.exciting-events__items {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.exciting-events__work-shop {
+    display: flex;
+    background-color: #2b2b2b;
+}
+.exciting-events__work-shop-img {
+    max-width: 50%;
+}
+.exciting-events__work-shop__content {
+    padding: 50px 70px 50px 70px;
+}
+.exciting-events__work-shop__content__p {
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(195, 195, 195);
+}
+.exciting-events__work-shop__content__p2 {
+    margin-top: 20px;
+    font-size: 22px;
+    font-family: "Prata", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.exciting-events__work-shop__content__list {
+    margin-top: 20px;
+}
+.exciting-events__work-shop__content__list__item {
+    color: rgb(215, 215, 215);
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Lato", sans-serif;
+}
+.exciting-events__work-shop__content__p3 {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: "Lato", sans-serif;
+    color: rgb(195, 195, 195);
+    line-height: 25.5px;
+}
+.exciting-events__work-shop_btn_wrap {
+    margin-top: 50px;
+}
+.exciting-events__work-shop_btn {
+    text-decoration: none;
+    padding: 13px 37px 13px 37px;
+    border-radius: 50%;
+    border-color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    transition: color .2s ease-in, background-color .2s ease-in, border-color .2s ease-in, box-shadow .2s ease-in;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Lato", sans-serif;
+}
+.exciting-events__work-shop_btn:hover {
+    background-color: #fff;
+    color: #2b2b2b;
+}
+.exciting-events__work-shop__content__list__span {
+    color: rgb(228, 149, 76);
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+}

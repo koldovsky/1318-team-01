@@ -1,23 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,400;0,700;1,400&family=Prata&display=swap');
+
+/*
+font-family: "Lato", sans-serif;
+font-family: "Great Vibes", cursive;
+font-family: "Prata", serif;
+*/
 
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --title-color: rgb(228, 149, 76);
-    scroll-behavior: smooth;
+  --title-color: rgb(228, 149, 76);
+  scroll-behavior: smooth;
 }
 
 img {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
-h1, h2 {
-    font-family: "Great Vibes", cursive;
+h1,
+h2 {
+  font-family: "Great Vibes", undefined;
+  color: var(--title-color);
+  font-weight: 400;
+  font-style: normal;
+}
+p {
+  color: #fff;
+  font-family: "Prata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ul, ul li {
+	list-style: none;
 }
