@@ -1,20 +1,26 @@
 .sweet-treats {
   background-color: var(--st-background-color);
-  position: relative;
-  width: 100%;
   min-width: 320px;
-  word-wrap: break-word;
-  .sweet-treats__subtitle {
-    color: var(--btn-hover-color);
-  }
-  .sweet-treats__title {
-    display: block;
-    flex-direction: column;
-    align-items: center;
-  }
+  padding: 55px 0;
   .sweet-treats__header {
-    @media (min-width: 600px) {
-      font-size: 100%;
+    display: grid;
+    grid-auto-flow:column;
+
+    .sweet-treats__title {
+      padding: 30px;
+      font-size: clamp(14px, 2vw, 38px);
+    }
+    .sweet-treats__subtitle {
+      font-size: clamp(34px, 1vw, 44px);
+      color: var(--btn-hover-color);
+    }
+    .sweet-treats__separator {
+      font-size: clamp(34px, 1vw, 44px);
+      color: var(--title-color);
+    }
+    .locations__divider {
+      height: 40px;
+      width: 40%;
     }
   }
 }
