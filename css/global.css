@@ -16,6 +16,7 @@ font-family: "Prata", serif;
 
 :root {
   --title-color: rgb(228, 149, 76);
+  --btn-hover-color: #ffff;
   scroll-behavior: smooth;
 }
 
@@ -39,4 +40,9 @@ p {
 }
 ul, ul li {
 	list-style: none;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
 }

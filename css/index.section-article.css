@@ -1,0 +1,41 @@
+.section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 900px;
+    height: 300px;
+}
+.image {
+
+}
+.image-details {
+    display: flex;
+    width: 70px;
+    height: 20px;
+}
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+}
+.image-cards {
+    display: flex;
+    width: 300px;
+    height: 200px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    width: 350px;
+}
