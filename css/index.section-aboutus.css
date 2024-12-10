@@ -1,9 +1,34 @@
+.main__aboutus {
+    background-color: #212020;
+    padding: 120px 0px;
+    
+}
+
+.main__leftsize {
+    padding: 0px 15px;
+    width: 400px;
+    height :459px;
+
+}
+
+.main__aboutus-features {
+    padding: 0px 15px;
+    width: 300px;
+    height :459px;
+}
 h2 {
     color: rgb(228, 149, 76);
+    font-size: 2.5rem;
+    margin: 0;
 }
 
 .main__aboutus-subtitle span {
     color: rgb(228, 149, 76);
+}
+
+.main__aboutus-spikelet {
+    margin: 20px 0;
+    text-align: left;
 }
 
 .main__aboutus-pdf img {
@@ -12,4 +37,10 @@ h2 {
 
 .main__aboutus-pdf-text {
     text-decoration: underline;
+}
+.main__aboutus-basket {
+    margin: 0 auto; 
+    text-align: center;
+    max-width: 530px;
+    padding: 0 15px;
 }
