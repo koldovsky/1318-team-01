@@ -1,13 +1,15 @@
 .section__recipes{
 
-    padding: 120px 0;
+    padding: 120px 40px;
     background-color: #2B2B2B;
+    
     
     .recipes__header{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap:24px;
+        text-align: center;
     
 
         .recipes__heading{
@@ -32,18 +34,21 @@
 
         .recipes__description{
             font-family:"Lato", sans-serif ;
-            font-size: 19 px;
+            font-size: 19px;
             color:#d7d7d7;
             font-weight: 600;
+            text-align: center;
         }
     }
 
     .recipes{
+
         display: grid;
         gap:20px;
         grid-template-columns: repeat(auto-fit, minmax(304px,1fr) );
-        padding: 0 40px;
+        
         margin-top: 40px;
+        
 
         .recipe__card{
         display: flex;
