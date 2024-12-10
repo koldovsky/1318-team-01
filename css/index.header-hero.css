@@ -1,0 +1,7 @@
+.header__hero{
+    background-image: url(../assets/images/header/header.img/header-background.png);
+}
+.header__hero-container{
+    display: flex;
+    flex-direction: row;
+}
