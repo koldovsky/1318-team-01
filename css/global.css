@@ -17,6 +17,7 @@ font-family: "Prata", serif;
 :root {
   --title-color: rgb(228, 149, 76);
   --btn-hover-color: #ffff;
+  --st-background-color: #212020;
   scroll-behavior: smooth;
 }
 

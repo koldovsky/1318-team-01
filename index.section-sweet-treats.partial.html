@@ -1,5 +1,5 @@
 <section class="sweet-treats">
-  <div class="sweet-treats__header">
+  <header class="sweet-treats__header">
     <h2 class="sweet-treats__title">Sweet treats</h2>
     <p class="sweet-treats__subtitle">
       Your Daily Dose of Pastry Baked with Care
@@ -13,9 +13,9 @@
     <p class="sweet-treats__description">
       The best pastry for a true connoisseur.
     </p>
-  </div>
+  </header>
   <div class="sweet-treats__content">
-    <button class="sweet-treats__button">
+    <button class="sweet-treats__button__prev" onclick="prevSlide()">
       <svg class="sweet-treats__icon" viewBox="0 0 30 30">
         <defs>
           <path
@@ -40,7 +40,7 @@
             alt="Honey Almond Cake"
           />
         </div>
-        <h2 class="product-card__title">Honey Almond Cake</h2>
+        <span class="product-card__title">Honey Almond Cake</span>
         <div class="product-card__details">
           <p class="product-card__detail">
             <span class="product-card__label">Weight: </span>120g
@@ -65,7 +65,7 @@
             alt="Chocolate Croissant"
           />
         </div>
-        <h2 class="product-card__title">Chocolate Croissant</h2>
+        <span class="product-card__title">Chocolate Croissant</span>
         <div class="product-card__details">
           <p class="product-card__detail">
             <span class="product-card__label">Weight: </span>90g
@@ -90,7 +90,7 @@
             alt="Berry Danish"
           />
         </div>
-        <h2 class="product-card__title">Berry Danish</h2>
+        <span class="product-card__title">Berry Danish</span>
         <div class="product-card__details">
           <p class="product-card__detail">
             <span class="product-card__label">Weight: </span>80g
@@ -115,7 +115,7 @@
             alt="Blueberry Muffin"
           />
         </div>
-        <h2 class="product-card__title">Blueberry Muffin</h2>
+        <span class="product-card__title">Blueberry Muffin</span>
         <div class="product-card__details">
           <p class="product-card__detail">
             <span class="product-card__label">Weight: </span>100g
@@ -140,7 +140,7 @@
             alt="Cinnamon Roll"
           />
         </div>
-        <h2 class="product-card__title">Cinnamon Roll</h2>
+        <span class="product-card__title">Cinnamon Roll</span>
         <div class="product-card__details">
           <p class="product-card__detail">
             <span class="product-card__label">Weight: </span>120g
@@ -157,7 +157,7 @@
         </div>
       </article>
     </div>
-    <button class="sweet-treats__button">
+    <button class="sweet-treats__button__next" onclick="nextSlide()">
       <svg class="sweet-treats__icon" viewBox="0 0 30 30">
         <defs>
           <path

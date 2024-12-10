@@ -1,0 +1,20 @@
+.sweet-treats {
+  background-color: var(--st-background-color);
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  word-wrap: break-word;
+  .sweet-treats__subtitle {
+    color: var(--btn-hover-color);
+  }
+  .sweet-treats__title {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sweet-treats__header {
+    @media (min-width: 600px) {
+      font-size: 100%;
+    }
+  }
+}
