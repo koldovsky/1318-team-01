@@ -1,5 +1,27 @@
-@import "global.css";
-
 .steps__title {
     color: var(--title-color);
+}
+
+.steps__dot {
+    color: var(--title-color);
+}
+
+.steps__subtitle {
+    font-family: "Prata", serif;
+    font-size: 34px;
+}
+
+.steps__description {
+    font-family: "Lato", sans-serif;
+    font-size: 19px;
+}
+
+.steps__item-title {
+    font-family: "Prata", serif;
+    font-size: 22px;
+}
+
+.steps__item-description {
+    font-family: "Lato", sans-serif;
+    font-size: 17px;    
 }
