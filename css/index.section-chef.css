@@ -1,6 +1,6 @@
 .chef-message__text {
-    font: 24px, serif;
-
+    font-size: 24px;
+    font-family: serif;
 }
 
 .chef-message__quote-icon {
