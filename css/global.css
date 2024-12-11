@@ -20,6 +20,8 @@ font-family: "Lato", serif;
   --btn-hover-color: #fff;
   --st-background-color: #212020;
   --item-description-color: rgb(215, 215, 215);
+  --quote-icon-color: #9a5e33;
+  --advantages-description-color: rgb(195,195,195);
   scroll-behavior: smooth;
   background-color: var(--st-background-color);
 }
