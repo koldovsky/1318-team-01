@@ -2,6 +2,10 @@
     color: #9a5e33;
 }
 
+.chef-message__author {
+    font-size: 14px;
+}
+
 .chef-message__text {
     font-size: 24px;
     font-family: serif;
