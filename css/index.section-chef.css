@@ -1,8 +1,18 @@
+.chef-message__quote-icon {
+    color: #9a5e33;
+}
+
 .chef-message__text {
     font-size: 24px;
     font-family: serif;
 }
 
-.chef-message__quote-icon {
-    color: #9a5e33;
+.advantages__title {
+    font-size: 22px;
+    color: var(--btn-hover-color);
+}
+
+.advantages__description {
+    font-size: 17px;
+    color: 195, 195, 195;
 }
