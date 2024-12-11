@@ -18,9 +18,10 @@ font-family: "Prata", serif;
   --title-color: rgb(228, 149, 76);
   --btn-hover-color: #ffff;
   --st-background-color: #212020;
+  /*Styles*/
   scroll-behavior: smooth;
+  background-color: var(--st-background-color); 
 }
-
 img {
   display: block;
   max-width: 100%;
