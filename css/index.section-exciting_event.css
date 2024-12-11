@@ -47,10 +47,16 @@
 }
 .exciting-events__work-shop {
     display: flex;
+    flex-direction: column;
     background-color: #2b2b2b;
 }
+.exciting-events__work-shop__img-container{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .exciting-events__work-shop-img {
-    max-width: 50%;
+    aspect-ratio: 3 / 2; /* Задання співвідношення сторін */
 }
 .exciting-events__work-shop__content {
     padding: 50px 70px 50px 70px;
