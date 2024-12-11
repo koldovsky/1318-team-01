@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bakery Website</title>
-    <link rel="icon" type="image/png" href="assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
     <link rel="icon" type="image/svg+xml" href="assets/favicons/favicon.svg" />
     <link rel="shortcut icon" href="assets/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicons/apple-touch-icon.png"
+    />
     <link rel="manifest" href="assets/favicons/site.webmanifest" />
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
     <header class="header">
       <nav
         class="header__nav"
@@ -29,7 +43,8 @@
       ></div>
     </header>
     <main>
-      <section class="main__aboutus"
+      <section
+        class="main__aboutus"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.section-aboutus.partial.html"
@@ -49,7 +64,8 @@
         data-hx-swap="outerHTML"
         data-hx-get="index.section-sweet-treats.partial.html"
       ></section>
-      <section class="section__recipes"
+      <section
+        class="section__recipes"
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.section-recipes.partial.html"
@@ -63,19 +79,23 @@
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.section-chef.partial.html"
-      ></section>      
+      ></section>
       <!-- Назва: "index" тому що тільки на головній, "section" - частина, "sustainbaility" - її назва, "upper/lower" - її положення  -->
       <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="index.section-exciting_events.partial.html"
-    ></section>
-    <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-exciting_events.partial.html"
+      ></section>
+      <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.section-steps.partial.html"
       ></section>
     </main>
-    <footer></footer>
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
   </body>
 </html>

@@ -1,0 +1,123 @@
+.footer {
+  background-color: var(--st-background-color);
+}
+.footer__wrapper {
+  padding: 0px 15px 0px 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.footer__wrapper__tb {
+  padding: 25px 0px 30px 0px;
+}
+.footer__blocks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__contacts {
+  padding: 8px 0px 8px 0px;
+}
+
+.footer__contacts__name {
+  font-size: 22px;
+  line-height: 28.6px;
+  font-family: "Prata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.footer__contacts__span {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+.footer__contacts__link {
+  color: rgb(195, 195, 195);
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+.footer__contacts__block {
+  height: 34px;
+}
+.footer__about__wrapper {
+  position: relative;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__about__wrapper::before {
+  position: absolute;
+  content: "";
+  height: 0.5px;
+  display: block;
+  background-color: #2b2b2b;
+  top: 0;
+  width: 100%;
+  background-color: #4d4d4d;
+}
+.footer__about__createdby {
+  height: 32px;
+  color: rgb(215, 215, 215);
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22.4px;
+  font-style: italic;
+}
+.item {
+  color: rgb(195, 195, 195);
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 25.5px;
+}
+.footer__crumb {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.footer__crumb__social-media {
+  display: flex;
+  gap: 15px;
+  height: 30px;
+}
+.footer__crumb__social-media__svg {
+  height: 30px;
+  width: 30px;
+}
+.logo_2gS {
+  width: 15px;
+  fill: #e4954c;
+}
+.footer__crumb__home-link {
+  font-family: "Prata", sans-serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 46px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.footer__crumb__link {
+  font-size: 17px;
+  color: rgb(195, 195, 195);
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+}
+.footer__crumb__list {
+  display: flex;
+  gap: 10px;
+}
+.footer__working {
+  padding: 8px 0px 8px 0px;
+}
