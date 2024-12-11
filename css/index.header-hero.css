@@ -1,7 +1,35 @@
 .header__hero{
     background-image: url(../assets/images/header/header.img/header-background.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    padding: 170px;
+    line-height: normal;
 }
 .header__hero-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 20px; 
+    max-width: 1200px;
+    width: 100%;
+}
+.header__hero-welcome{
+    font-size: 74px;
+    font-family: "Prata", sans-serif;
+    font-style: normal;
+    line-height: 1.2;
+}
+.header__hero-title{
+    font-size: 38px;
+}
+.header__hero-description{
+    font-size: 20px;
+    font-family: "Lato", serif;
+    color: #d7d7d7;
 }
