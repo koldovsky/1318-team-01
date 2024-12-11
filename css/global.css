@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,400;0,700;1,400&family=Prata&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:ital,wght@0,400;0,700;1,400&family=Prata&display=swap");
 
 /*
 font-family: "Lato", sans-serif;
@@ -16,11 +16,11 @@ font-family: "Prata", serif;
 
 :root {
   --title-color: rgb(228, 149, 76);
-  --btn-hover-color: #ffff;
+  --btn-hover-color: #fff;
   --st-background-color: #212020;
-  /*Styles*/
+  --item-description-color: rgb(215, 215, 215);
   scroll-behavior: smooth;
-  background-color: var(--st-background-color); 
+  background-color: var(--st-background-color);
 }
 img {
   display: block;
@@ -40,11 +40,12 @@ p {
   font-weight: 400;
   font-style: normal;
 }
-ul, ul li {
-	list-style: none;
+ul,
+ul li {
+  list-style: none;
 }
 
-.container{
+.container {
   max-width: 1200px;
   margin: auto;
 }

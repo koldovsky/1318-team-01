@@ -1,5 +1,50 @@
-@import "global.css";
+.steps {
+  background: linear-gradient(rgba(38, 38, 38, 0.95), rgba(38, 38, 38, 0.95)), 
+              url(../assets/images/steps/background.jpg);
+  padding: 90px 0;
+}
+
+.steps__intro {
+  text-align: center;
+  padding: 0 15px;
+}
+
+.steps__divider {
+  display: inline-block;
+  height: 32px;
+  margin-top: 20px;
+}
 
 .steps__title {
-    color: var(--title-color);
+  color: var(--title-color);
+  font-size: 2.375rem;
+}
+
+.steps__dot {
+  color: var(--title-color);
+}
+
+.steps__subtitle {
+  font-family: "Prata", serif;
+  font-size: 2.625rem;
+  margin-top: 20px;
+}
+
+.steps__description {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1875rem;
+  color: var(--item-description-color);
+  margin-top: 15px;
+}
+
+.steps__item-title {
+  font-family: "Prata", serif;
+  font-size: 1.1375rem;
+  color: white; /*to fix*/
+}
+
+.steps__item-description {
+  font-family: "Lato", sans-serif;
+  font-size: 1.0625rem;
+  color: var(--item-description-color);
 }
