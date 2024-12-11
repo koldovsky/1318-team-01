@@ -2,14 +2,13 @@
     color: #9a5e33;
 }
 
-.chef-message__author {
-    font-size: 14px;
-    font-family: "Prata", sans-serif;
-}
-
 .chef-message__text {
     font-size: 24px;
-    font-family: serif;
+    font-family: "Prata", serif;
+}
+
+.chef-message__author {
+    font-size: 14px;
 }
 
 .advantages__title {
