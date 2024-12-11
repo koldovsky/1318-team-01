@@ -1,20 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 .main__aboutus {
     background-color: #212020;
+}
+.main__aboutusinner{
     padding: 120px 0px;
-    
+    display: flex; 
+    max-width: 1170px;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .main__leftsize {
     padding: 0px 15px;
     width: 400px;
-    height :459px;
-
 }
 
 .main__aboutus-features {
     padding: 0px 15px;
     width: 300px;
-    height :459px;
+    font-family: "Lato", sans-serif;
 }
 h2 {
     color: rgb(228, 149, 76);
@@ -31,6 +36,12 @@ h2 {
     text-align: left;
 }
 
+.main__aboutus-pdf {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
 .main__aboutus-pdf img {
     filter: invert(43%) sepia(77%) saturate(400%) hue-rotate(345deg) brightness(95%) contrast(88%);
 }
@@ -39,8 +50,49 @@ h2 {
     text-decoration: underline;
 }
 .main__aboutus-basket {
-    margin: 0 auto; 
     text-align: center;
     max-width: 530px;
     padding: 0 15px;
+}
+
+.main__aboutus-feature{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: start;
+}
+
+.col p {
+    margin-bottom: 5px;
+}
+
+.colp1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-family: "Lato", sans-serif;
+}
+
+.colp2 {
+    font-size: 17px;
+    color: #c3c3c3;
+    font-family: "Lato", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .main__aboutus {
+        padding: 0px 24px;
+    }
+    .main__aboutusinner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__leftsize {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .main__aboutus-features {
+        width: 100%;
+        margin-top: 70px;
+    }
 }
