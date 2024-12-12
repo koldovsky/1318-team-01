@@ -8,7 +8,7 @@
 
 .stats__number {
   font-size: 48px;
-  color: rgb(228, 149, 76);
+  color: var(--title-color);
   margin: 0;
 }
 
