@@ -1,5 +1,8 @@
 .chef-message {
-    background-image: "assets/images/chef/background-chef.png";
+    background-image: url("assets/images/chef/background-chef.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     display: inline-block;
 }
 
