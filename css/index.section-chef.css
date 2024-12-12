@@ -27,6 +27,18 @@
     font-style: normal;
 }
 
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    flex: 1 1 calc(25% - 25px);
+    box-sizing: border-box;
+}
+
 .advantages__title {
     color: var(--btn-hover-color);
     font-family: "Prata", serif;
