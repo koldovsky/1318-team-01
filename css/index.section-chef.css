@@ -1,5 +1,6 @@
 .chef-message {
-    background-image: "assets/images/chef/background-chef.png"
+    background-image: "assets/images/chef/background-chef.png";
+    display: inline-block;
 }
 
 .chef-message__quote-icon {
