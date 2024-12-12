@@ -20,6 +20,11 @@ font-family: "Lato", serif;
   --btn-hover-color: #fff;
   --st-background-color: #212020;
   --item-description-color: rgb(215, 215, 215);
+  --recipe-bg-color:  #2B2B2B;
+  --description-recipes-color:#d7d7d7;
+  --white-default-color: #ffff;
+  --devider-color:#9A5E33;
+  --dark-default-color: #000;
   scroll-behavior: smooth;
   background-color: var(--st-background-color);
 }
