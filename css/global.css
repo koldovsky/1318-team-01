@@ -20,8 +20,18 @@ font-family: "Lato", serif;
   --btn-hover-color: #fff;
   --st-background-color: #212020;
   --item-description-color: rgb(215, 215, 215);
+<<<<<<< HEAD
   --location-color: #ffffffb3;
   --location-icon-color: #9A5E33;
+=======
+  --recipe-bg-color:  #2B2B2B;
+  --description-recipes-color:#d7d7d7;
+  --white-default-color: #ffff;
+  --devider-color:#9A5E33;
+  --dark-default-color: #000;
+  --quote-icon-color: #9a5e33;
+  --advantages-description-color: rgb(195, 195, 195);
+>>>>>>> 0991a59183eb2f0dc7eb1d19e3b2b43ca0796a16
   scroll-behavior: smooth;
   background-color: var(--st-background-color);
 }
