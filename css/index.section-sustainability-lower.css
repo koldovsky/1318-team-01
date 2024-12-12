@@ -1,1 +1,28 @@
+.stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 0;
+}
 
+.stats__number {
+  font-size: 48px;
+  color: rgb(228, 149, 76);
+  margin: 0;
+}
+
+.stats__line {
+  width: 40px;
+  height: 4px;
+  background-color: rgb(228, 149, 76);
+  border: none;
+  margin-left: 1px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.stats__description {
+  font-size: 16px;
+  margin: 0;
+}
