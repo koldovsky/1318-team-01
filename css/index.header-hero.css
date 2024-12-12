@@ -49,8 +49,6 @@
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-size: 14px;
-    color: var(--location-color);
-    
 }
 
 .header__hero-location {
@@ -61,10 +59,12 @@
 
 .header__hero-address{
     font-style: normal;
+    color: var(--location-color);
 }
 
 .header__hero-dot{
     color: var(--title-color);
+    
 }
 
 .header__hero-icon{
