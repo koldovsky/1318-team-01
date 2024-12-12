@@ -2,8 +2,8 @@
   background-color: var(--st-background-color);
 }
 .footer__wrapper {
-  padding: 0px 15px 0px 15px;
-  max-width: 1200px;
+  padding: 0px 24px 0px 24px;
+  max-width: 768px;
   margin: 0 auto;
 }
 .footer__wrapper__tb {
@@ -11,11 +11,15 @@
 }
 .footer__blocks {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 .footer__contacts {
+  display: flex;
+  flex-direction: column;
   padding: 8px 0px 8px 0px;
+  align-items: center;
 }
 
 .footer__contacts__name {
@@ -44,11 +48,14 @@
 .footer__contacts__block {
   height: 34px;
 }
+/* Section about author*/
 .footer__about__wrapper {
   position: relative;
   padding: 10px 0px 10px 0px;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 .footer__about__wrapper::before {
   position: absolute;
@@ -115,8 +122,12 @@
 }
 .footer__crumb__list {
   display: flex;
+  flex-direction: column;
   gap: 10px;
 }
 .footer__working {
   padding: 8px 0px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
