@@ -15,7 +15,7 @@
 .stats__line {
   width: 40px;
   height: 4px;
-  background-color: #9a5e33;
+  background-color: var(--location-icon-color);
   border: none;
   margin-left: 1px;
   margin-top: 10px;
