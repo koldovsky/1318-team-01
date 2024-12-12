@@ -35,7 +35,7 @@
 }
 
 .advantages__item {
-    flex: 1 1 calc(25% - 25px);
+    flex: 1 1 calc(25% - 15px);
     box-sizing: border-box;
 }
 
