@@ -20,6 +20,8 @@ font-family: "Lato", serif;
   --btn-hover-color: #fff;
   --st-background-color: #212020;
   --item-description-color: rgb(215, 215, 215);
+  --location-color: #ffffffb3;
+  --location-icon-color: #9A5E33;
   scroll-behavior: smooth;
   background-color: var(--st-background-color);
 }
@@ -47,6 +49,6 @@ ul li {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: auto;
 }
