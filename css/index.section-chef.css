@@ -1,3 +1,7 @@
+.chef {
+    background-image: "assets/images/chef/background-chef.png"
+}
+
 .chef-message__quote-icon {
     color: var(--quote-icon-color);
     width: 50px;
@@ -36,7 +40,7 @@
     font-style: normal;
 }
 
-.advantages__dash {
+.advantages__dash-icon {
     width: 42.9px;
     height: 33.99px;
 }
