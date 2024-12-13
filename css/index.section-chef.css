@@ -6,6 +6,7 @@
     background-position: center;
     height: auto;
     padding: 90px 24px;
+    display: inline-block;
 }
 
 .chef-message::before {
