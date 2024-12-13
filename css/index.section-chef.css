@@ -3,9 +3,11 @@
     background-image: url(../assets/images/chef/background-chef.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     height: auto;
-    padding: 90px 24px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 90px 0px;
     display: inline-block;
 }
 
