@@ -1,11 +1,24 @@
 .chef-message {
+    position: relative;
     background-image: url(../assets/images/chef/background-chef.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     height: auto;
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding: 90px 24px;
+}
+
+.chef-message::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    padding: 0px 0px 0px 15px;
+    width: 0px;
+    height: 488.53;
+    background-color: var(--advantages-description-color);
+    /* border-radius: 2px; */
 }
 
 @media (min-width: 992px) {
@@ -26,6 +39,7 @@
     font-size: 24px;
     font-weight: 400;
     font-style: normal;
+    padding: 5px 0px 5px 20px;
 }
 
 .chef-message__author {
@@ -37,10 +51,13 @@
 }
 
 .advantages {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
     justify-content: space-between;
+    height: auto;
+    padding: 30px 24px;
 }
 
 .advantages__item {
