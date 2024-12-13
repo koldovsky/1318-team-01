@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prata&display=swap');
-
 .main__aboutus {
-    background-color: #212020;
+    background-color: rgb(33, 32, 32);
 }
-.main__aboutusinner{
+
+.main__aboutusinner {
     padding: 120px 0px;
-    display: flex; 
+    display: flex;
     max-width: 1170px;
+    min-width: 320px;
     margin: 0 auto;
     align-items: center;
 }
@@ -22,6 +21,7 @@
     width: 300px;
     font-family: "Lato", sans-serif;
 }
+
 h2 {
     color: rgb(228, 149, 76);
     font-size: 2.5rem;
@@ -31,21 +31,21 @@ h2 {
 .main__aboutus-subtitle {
     font-family: "Prata", sans-serif;
     font-size: 42px;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     margin: 15px 0;
 }
 
 .main__aboutus-smelltext {
-    color: #D7D7D7;
+    color: rgb(215, 215, 215);
     font-family: "Lato", sans-serif;
     font-weight: bold;
     font-size: 19px;
 }
 
 .main__aboutus-text {
-    color: #C3C3C3;
+    color: rgb(195, 195, 195);
     font-family: "Lato", sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     margin: 25px 0;
 }
 
@@ -75,33 +75,34 @@ h2 {
     font-size: 14px;
 
 }
+
 .main__aboutus-basket {
     text-align: center;
     max-width: 530px;
     padding: 0 15px;
 }
 
-.main__aboutus-feature{
+.main__aboutus-feature {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
     align-items: start;
 }
 
-.col p {
+.main__aboutus-feature-text p {
     margin-bottom: 5px;
 }
 
-.colp1 {
+.main__aboutus-feature-heading {
     font-size: 14px;
     font-weight: bold;
-    color: #FFFFFF;
+    color: rgb(255, 255, 255);
     font-family: "Lato", sans-serif;
 }
 
-.colp2 {
-    font-size: 17px;
-    color: #c3c3c3;
+.main__aboutus-feature-description {
+    font-size: 16px;
+    color: rgb(195, 195, 195);
     font-family: "Lato", sans-serif;
 }
 
@@ -109,16 +110,29 @@ h2 {
     .main__aboutus {
         padding: 0px 24px;
     }
+
+    h2 {
+        font-size: 24px
+    }
+
     .main__aboutusinner {
         flex-direction: column;
         align-items: center;
     }
+
     .main__leftsize {
         width: 100%;
         margin-bottom: 70px;
     }
+
     .main__aboutus-features {
         width: 100%;
         margin-top: 70px;
+    }
+}
+
+@media (max-width: 420px) {
+    h2 {
+        font-size: 18px
     }
 }
