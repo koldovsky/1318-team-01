@@ -14,8 +14,9 @@
     top: 0;
     bottom: 0;
     left: 20px;
-    padding: 0px 15 px;
-    width: 5px;
+    padding: 0px 15px;
+    width: 1px;
+    height: 488.53;
     background-color: var(--advantages-description-color);
     /* border-radius: 2px; */
 }
