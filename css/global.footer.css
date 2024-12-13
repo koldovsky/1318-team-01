@@ -15,7 +15,7 @@
   align-items: center;
 }
 /*Footer contacts*/
-.footer__contacts__list{
+.footer__contacts__list {
   align-items: center;
   text-align: center;
 }
@@ -63,7 +63,7 @@
   gap: 30px;
   align-items: center;
 }
-.footer__crumb__list{
+.footer__crumb__list {
   align-items: center;
   text-align: center;
   display: flex;
@@ -95,11 +95,11 @@
   font-style: normal;
   font-family: "Lato", sans-serif;
 }
-.footer__crumb__item{
+.footer__crumb__item {
   margin: 10px 0px 10px 0px;
   display: inline;
 }
-.loc{
+.loc {
   margin-bottom: 0px;
 }
 .logo_2gS {
@@ -151,7 +151,7 @@
   line-height: 22.4px;
   font-style: italic;
 }
-.hide-except{
+.hide-except {
   display: none;
 }
 
@@ -161,54 +161,50 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .footer__contacts__list{
-    align-items: start;
+  .footer__contacts__list {
     text-align: start;
-  }
-  .footer__contacts{
+    display: flex;
+    flex-direction: column;
     flex-basis: 20%;
   }
-  .footer__about__wrapper{
-    flex-direction: row;
+  .footer__contacts {
+    flex-basis: 15%;
+    height: 100%;
+    align-items: start;
+    padding: 0px 15px 0px 15px;
   }
-  .footer__crumb{
+
+  .footer__contacts__block {
+    align-items: start;
+  }
+  .footer__crumb {
     flex-basis: 20%;
     margin-top: 0px;
     padding: 0px 15px 0px 15px;
   }
-  .footer__working{
-    flex-wrap: wrap;
+  .footer__crumb__item {
+    margin: 5px 0px 5px 0px;
+    display: inline;
+  }
+  .footer__working {
     height: 100%;
     margin-top: 0px;
     padding: 0px 15px 0px 15px;
     align-items: end;
     min-width: 153.3px;
-    flex-basis: 20%;
+    flex-basis: 26%;
   }
-  .footer__contacts__block{
-    align-items: start;
-  }
-  .footer__contacts{
-    align-items: start;
-    height: 100%;
-    width: 100%;
-    padding: 0px 15px 0px 15px;
-  }
-  .svg2{
+  .svg2 {
     align-items: end;
   }
-  .list-working{
+  .list-working {
     align-items: end;
     text-align: end;
   }
-  .item{
+  .item {
     text-align: right;
   }
-  .footer__crumb__item{
-    margin: 5px 0px 5px 0px;
-    display: inline;
+  .footer__about__wrapper {
+    flex-direction: row;
   }
-  
-
-
 }
