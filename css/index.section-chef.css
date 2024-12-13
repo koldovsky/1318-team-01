@@ -15,10 +15,9 @@
     bottom: 0;
     left: 20px;
     padding: 0;
-    /* 0px 0px 0px 15px; */
     width: 1px;
-    height: 488.53px;
-    background-color: var(--btn-hover-color);
+    /* height: 488.54px; */
+    background-color: var(--advantages-description-color);
     /* border-radius: 2px; */
 }
 
