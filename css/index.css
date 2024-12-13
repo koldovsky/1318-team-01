@@ -1,4 +1,6 @@
 @import "global.css";
+@import "index.header-hero.css";
+@import "index.header-nav.css";
 @import "index.section-steps.css";
 @import "index.section-aboutus.css";
 @import "index.section-exciting_event.css";
@@ -7,7 +9,5 @@
 @import "index.section-locations.css";
 @import "index.section-recipes.css";
 @import "index.section-sweet-treats.css";
-@import "index.header-hero.css";
-@import "index.header-nav.css";
 @import "global.footer.css";
 @import "index.section-chef.css";
