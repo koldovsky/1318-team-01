@@ -1,12 +1,17 @@
 .chef-message {
     background-image: url(../assets/images/chef/background-chef.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
+    height: auto;
     padding-top: 140px;
     padding-bottom: 140px;
-    /*min-width: 992px; */
+}
+
+@media (min-width: 992px) {
+    .chef-message {
+        background-size: cover;
+    }
 }
 
 .chef-message__quote-icon {
