@@ -14,11 +14,10 @@
     top: 0;
     bottom: 0;
     left: 20px;
-    padding: 90px 0px;
+    /* padding: 90px 0px; */
     width: 1px;
-    /* height: 488.54px; */
     background-color: var(--advantages-description-color);
-    /* border-radius: 2px; */
+    border-radius: 2px;
 }
 
 @media (min-width: 992px) {
