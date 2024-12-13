@@ -23,7 +23,7 @@
 .chef-message__text {
     color: var(--btn-hover-color);
     font-family: "Prata", serif;
-    font-size: 31px;
+    font-size: 24px;
     font-weight: 400;
     font-style: normal;
 }
@@ -31,7 +31,7 @@
 .chef-message__author {
     color: var(--title-color);
     font-family: "Great Vibes", undefined;
-    font-size: 38px;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
 }
