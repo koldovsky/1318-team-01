@@ -14,10 +14,11 @@
     top: 0;
     bottom: 0;
     left: 20px;
-    padding: 0px 0px 0px 15px;
+    padding: 0;
+    /* 0px 0px 0px 15px; */
     width: 1px;
     height: 488.53px;
-    /* background-color: var(--advantages-description-color); */
+    background-color: var(--btn-hover-color);
     /* border-radius: 2px; */
 }
 
