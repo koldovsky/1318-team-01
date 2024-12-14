@@ -1,16 +1,12 @@
-.chef-message-background {
-    background-image: url(../assets/images/chef/background-chef.png);
-    padding: 0;
-}
-
 .chef-message {
     position: relative;
-    background-size: contain;
+    /* background-size: contain;
     background-repeat: no-repeat;
     background-position: left center;
-    height: auto;
+    height: auto; */
     padding: 90px 0px;
     display: inline-block;
+    z-index: 1;
 }
 
 .chef-message::before {
@@ -21,15 +17,25 @@
     left: 15px;
     right: 20px;
     width: 1px;
-    height: 100%;
-    padding: 0px 15px;
+    /* height: 100%;
+    padding: 0px 15px; */
     background-color: var(--advantages-description-color);
+    z-index: 2;
 }
 
-@media (min-width: 992px) {
-    .chef-message {
-        background-size: cover;
-    }
+.chef-message::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../assets/images/chef/background-chef.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    z-index: -1;
+    opacity: 0.8;
 }
 
 .chef-message__quote-icon {
@@ -53,6 +59,12 @@
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
+}
+
+@media (min-width: 992px) {
+    .chef-message::after {
+        background-size: cover;
+    }
 }
 
 .advantages {
