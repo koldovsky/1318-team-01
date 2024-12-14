@@ -1,10 +1,10 @@
-.chef-background {
-
+.chef-message-background {
+    background-image: url(../assets/images/chef/background-chef.png);
+    padding: 0;
 }
 
 .chef-message {
     position: relative;
-    background-image: url(../assets/images/chef/background-chef.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left center;
