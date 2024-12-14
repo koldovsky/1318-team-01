@@ -1,9 +1,5 @@
 .chef-message {
     position: relative;
-    /* background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left center;
-    height: auto; */
     padding: 90px 0px;
     display: inline-block;
     z-index: 1;
@@ -13,15 +9,10 @@
     content: "";
     display: block;
     position: absolute;
-
     top: 0;
-    /* bottom: 0; */
     left: 15px;
-    /* right: 20px; */
-
     width: 1px;
     height: 100%;
-    /* padding: 0px 15px; */
     background-color: var(--btn-hover-color);
     z-index: 2;
     opacity: .2;
@@ -38,6 +29,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left center;
+    min-height: 668.53px;
     z-index: -1;
     opacity: 0.8;
 }
