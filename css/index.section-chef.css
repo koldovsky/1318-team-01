@@ -17,7 +17,7 @@
     top: 0;
     /* bottom: 0; */
     left: 15;
-    /* right: 20px; */
+    right: 20px;
 
     width: 1px;
     height: 100%;
@@ -40,6 +40,12 @@
     background-position: left center;
     z-index: -1;
     opacity: 0.8;
+}
+
+@media (min-width: 992px) {
+    .chef-message::after {
+        background-size: cover;
+    }
 }
 
 .chef-message__quote-icon {
@@ -65,12 +71,6 @@
     font-weight: 400;
     font-style: normal;
     padding: 20px 0px 0px 30px;
-}
-
-@media (min-width: 992px) {
-    .chef-message::after {
-        background-size: cover;
-    }
 }
 
 .advantages {
