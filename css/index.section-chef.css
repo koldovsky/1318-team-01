@@ -1,3 +1,7 @@
+.chef {
+    padding: 90px 24px;
+}
+
 .chef-message {
     position: relative;
     background-image: url(../assets/images/chef/background-chef.png);
@@ -5,7 +9,7 @@
     background-repeat: no-repeat;
     background-position: left center;
     height: auto;
-    padding: 90px 0px;
+    /* padding: 90px 0px; */
     display: inline-block;
 }
 
@@ -18,6 +22,7 @@
     right: 20px;
     width: 1px;
     height: 100%;
+    padding: 0px 15px;
     background-color: var(--advantages-description-color);
 }
 
