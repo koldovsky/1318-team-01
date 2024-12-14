@@ -16,8 +16,8 @@
 }
 /*Footer contacts*/
 .footer__contacts__list{
-  align-items: center;
-  text-align: center;
+text-align: center;
+
 }
 .footer__contacts {
   display: flex;
@@ -65,7 +65,6 @@
 }
 .footer__crumb__list{
   align-items: center;
-  text-align: center;
   display: flex;
   flex-direction: column;
 }
@@ -158,15 +157,32 @@
 /*Media*/
 @media (min-width: 768px) {
   .footer__blocks {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .footer__contacts__list{
-    align-items: start;
-    text-align: start;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
   }
   .footer__contacts{
-    flex-basis: 20%;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    align-items: baseline;
+    padding: 0px 15px 0px 15px;
+    
+  }
+  .footer__contacts__list{
+    
+    
+  }
+  .item-contacts{
+    align-items: baseline;
+    text-wrap: wrap;
+    text-align: start;
+  }
+  .footer__contacts__block{
+    align-items: baseline;
+  }
+  .footer__contacts__list{
+    align-items: baseline;
+    flex-wrap: wrap;
   }
   .footer__about__wrapper{
     flex-direction: row;
@@ -184,15 +200,6 @@
     align-items: end;
     min-width: 153.3px;
     flex-basis: 20%;
-  }
-  .footer__contacts__block{
-    align-items: start;
-  }
-  .footer__contacts{
-    align-items: start;
-    height: 100%;
-    width: 100%;
-    padding: 0px 15px 0px 15px;
   }
   .svg2{
     align-items: end;
