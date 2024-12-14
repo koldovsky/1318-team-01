@@ -1,5 +1,5 @@
-.chef {
-    padding: 90px 24px;
+.chef-background {
+
 }
 
 .chef-message {
@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-position: left center;
     height: auto;
-    /* padding: 90px 0px; */
+    padding: 90px 0px;
     display: inline-block;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 20px;
+    left: 15px;
     right: 20px;
     width: 1px;
     height: 100%;
