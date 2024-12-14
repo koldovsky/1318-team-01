@@ -11,16 +11,20 @@
 
 .chef-message::before {
     content: "";
+    display: block;
     position: absolute;
+
     top: 0;
-    bottom: 0;
-    left: 15px;
-    right: 20px;
+    /* bottom: 0; */
+    left: 0;
+    /* right: 20px; */
+
     width: 1px;
-    /* height: 100%;
-    padding: 0px 15px; */
-    background-color: var(--advantages-description-color);
+    height: 100%;
+    /* padding: 0px 15px; */
+    background-color: var(--btn-hover-color);
     z-index: 2;
+    opacity: .2;
 }
 
 .chef-message::after {
