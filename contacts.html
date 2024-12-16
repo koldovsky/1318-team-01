@@ -26,14 +26,30 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header>
-      
-      <div class="contacts__header__hero">
-        <h2 class="contacts__header__hero__title">Contacts</h2>
-        <p class="contacts__header__hero__paragraph"><a class="contacts__header__hero__home-link" href="index.html">Home</a> > Contacts</p>
+    <header class="contacts__header">
+      <div class="header__img-cover">
+        <div class="contacts__header__wrapper">
+          <nav
+            class="header__nav"
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="global.header-nav.partial.html"
+          ></nav>
+          <div class="contacts__header__hero">
+            <h2 class="contacts__header__hero__title">Contacts</h2>
+            <p class="contacts__header__hero__paragraph"><a class="contacts__header__hero__home-link" href="index.html">Home > </a><span class="contacts-span">Contacts</span></p>
+          </div>
+        </div>
       </div>
     </header>
-    <main></main>
+    <main>
+
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.section-locations.partial.html"
+      ></section>
+    </main>
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"

@@ -1,0 +1,52 @@
+.header__img-cover{
+    background-image: url(../assets/images/global/background-_mg.png);
+    background-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    filter: grayscale(100%);
+
+}
+.header__img-cover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(32, 32, 32, 0.93); /* Чорний фон з прозорістю 60% */
+    z-index: -1;
+}
+
+.contacts__header__hero{
+    text-align: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 70px 24px 80px 24px;
+}
+.contacts__header__hero__title{
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Prata", serif;
+    color: var(--white-default-color);
+
+}
+.contacts__header__hero__paragraph{
+    margin-top: 25px;
+}
+.contacts-span{
+    text-decoration: underline;
+    color: rgb(228, 149, 76) !important;
+}
+.contacts__header__hero__home-link{
+    text-decoration: none;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 25.5px;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    color: var(--advantages-description-color);
+}
