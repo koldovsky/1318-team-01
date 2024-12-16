@@ -1,192 +1,188 @@
 .exciting-events {
-    background-color: #212020;
+  background-color: #212020;
 }
 .exciting-events__wrapper {
-    margin: 0 auto;
-    padding-top: 90px;
-    max-width: 1218px;
-    padding-bottom: 90px;
-    padding-left: 24px;
-    padding-right: 24px;
+  margin: 0 auto;
+  padding-top: 90px;
+  max-width: 1218px;
+  padding-bottom: 90px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 .exciting-events__text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .exciting-event__name {
-    font-size: 14px;
-    color: var(--title-color);
-    font-weight: 400;
-    font-style: normal;
+  font-size: 14px;
+  color: var(--title-color);
+  font-weight: 400;
+  font-style: normal;
 }
 .exciting-events__paragraph {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 34px;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 34px;
 }
 .exciting-events__dot {
-    color: var(--title-color);
+  color: var(--title-color);
 }
 .exciting-events__spikelets {
-    margin-top: 25px;
-    height: 32px;
+  margin-top: 25px;
+  height: 32px;
 }
 .exciting-event__paragraph-utitle {
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    font-size: 19px;
-    font-weight: 700;
-    font-style: normal;
-    margin-top: 20px;
-    color: var(--item-description-color);
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  font-style: normal;
+  margin-top: 20px;
+  color: var(--item-description-color);
 }
 .exciting-events__items {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .exciting-events__work-shop {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--recipe-bg-color);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--recipe-bg-color);
 }
-.exciting-events__work-shop__img-container{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.exciting-events__work-shop__img-container {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .exciting-events__work-shop-img {
-    aspect-ratio: 3 / 2; /* Задання співвідношення сторін */
+  aspect-ratio: 3 / 2; /* Задання співвідношення сторін */
 }
 .exciting-events__work-shop__content {
-    height: 100%;
-    padding: 35px 43px;
+  height: 100%;
+  padding: 35px 43px;
 }
 .exciting-events__work-shop__content__p {
-    display: block;
-    font-size: 14px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    color: var(--advantages-description-color);
+  display: block;
+  font-size: 14px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--advantages-description-color);
 }
 .exciting-events__work-shop__content__p2 {
-    line-height: 28.6px;
-    margin-top: 20px;
-    font-size: 22px;
-    font-family: "Prata", serif;
-    font-weight: 400;
-    font-style: normal;
+  line-height: 28.6px;
+  margin-top: 20px;
+  font-size: 22px;
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .exciting-events__work-shop__content__list {
-    margin-top: 20px;
-    padding: 2.8px 0px 2.8px 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 5.3px;
+  margin-top: 20px;
+  padding: 2.8px 0px 2.8px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5.3px;
 }
 .exciting-events__work-shop__content__list__item {
-    color: var(--item-description-color);
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: "Lato", sans-serif;
+  color: var(--item-description-color);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
 }
 .exciting-events__work-shop__content__p3 {
-    margin-top: 20px;
-    font-size: 17px;
-    font-weight: 400;
-    font-style: normal;
-    font-family: "Lato", sans-serif;
-    color: var(--advantages-description-color);
-    line-height: 25.5px;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
+  color: var(--advantages-description-color);
+  line-height: 25.5px;
 }
 .exciting-events__work-shop_btn {
-    box-sizing: border-box;
-    margin-top: 35px;
-    display: inline-block;
-    text-decoration: none;
-    padding: 13px 37px;
-    border-radius: 50%;
-    border-color: var(--white-default-color);
-    border: 2px solid var(--white-default-color);
-    border-radius: 30px;
-    transition: color .2s ease-in, background-color .2s ease-in, border-color .2s ease-in, box-shadow .2s ease-in;
-    color: var(--white-default-color);
-    font-size: 15px;
-    line-height: 19.5px;
-    font-weight: 700;
-    font-style: normal;
-    font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+  margin-top: 35px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 13px 37px;
+  border-radius: 50%;
+  border-color: var(--white-default-color);
+  border: 2px solid var(--white-default-color);
+  border-radius: 30px;
+  transition: color 0.2s ease-in, background-color 0.2s ease-in,
+    border-color 0.2s ease-in, box-shadow 0.2s ease-in;
+  color: var(--white-default-color);
+  font-size: 15px;
+  line-height: 19.5px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Lato", sans-serif;
 }
 .exciting-events__work-shop_btn:hover {
-    background-color: var(--white-default-color);
-    color: var(--recipe-bg-color);
+  background-color: var(--white-default-color);
+  color: var(--recipe-bg-color);
 }
 .exciting-events__work-shop__content__list__span {
-    color: var(--title-color);
-    font-size: 14px;
-    font-weight: 700;
-    font-family: "Lato", sans-serif;
-    font-style: normal;
+  color: var(--title-color);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
 }
 @media (min-width: 768px) {
-    .exciting-events__work-shop {
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .exciting-events__work-shop__img-container{
-        width: 100%; /* Зображення заповнює колонку */
-        height: 100%; /* Зображення адаптується по висоті */
-        object-fit: cover; /* Обрізає зайве, зберігаючи пропорції */
-
-    }
-    .exciting-events__work-shop-img {
-        width: 100%; /* Зображення заповнює колонку */
-        height: 100%; /* Зображення адаптується по висоті */
-        object-fit: cover; /* Обрізає зайве, зберігаючи пропорції */
-    }
-    .table_img{
-       order: 2;
-    }
-    .exciting-event__name{
-        font-size: 26px;
-    }
-    .exciting-events__wrapper{
-        max-width: 1244px;
-        padding: 105px 37px;
-
-    }
-    .exciting-events__work-shop__content{
-        padding: 40px 52px;
-    }
-    .exciting-events__work-shop_btn{
-        margin-top: 35px;
-    }
+  .exciting-events__work-shop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .exciting-events__work-shop__img-container {
+    width: 100%; /* Зображення заповнює колонку */
+    height: 100%; /* Зображення адаптується по висоті */
+    object-fit: cover; /* Обрізає зайве, зберігаючи пропорції */
+  }
+  .exciting-events__work-shop-img {
+    width: 100%; /* Зображення заповнює колонку */
+    height: 100%; /* Зображення адаптується по висоті */
+    object-fit: cover; /* Обрізає зайве, зберігаючи пропорції */
+  }
+  .table_img {
+    order: 2;
+  }
+  .exciting-event__name {
+    font-size: 26px;
+  }
+  .exciting-events__wrapper {
+    max-width: 1244px;
+    padding: 105px 37px;
+  }
+  .exciting-events__work-shop__content {
+    padding: 40px 52px;
+  }
+  .exciting-events__work-shop_btn {
+    margin-top: 35px;
+  }
 }
 @media (min-width: 992px) {
-    .exciting-event__name{
-        font-size: 38px;
-    }
-    .exciting-events__wrapper{
-        max-width: 1250px;
-        padding: 120px 40px;
-
-    }
-    .exciting-events__work-shop_btn{
-        margin-top: 40px;
-    }
-    .exciting-events__work-shop__content{
-        padding: 50px 70px;
-    }
-
+  .exciting-event__name {
+    font-size: 38px;
+  }
+  .exciting-events__wrapper {
+    max-width: 1250px;
+    padding: 120px 40px;
+  }
+  .exciting-events__work-shop_btn {
+    margin-top: 40px;
+  }
+  .exciting-events__work-shop__content {
+    padding: 50px 70px;
+  }
 }
 @media (min-width: 1280px) {
-    .exciting-events__wrapper{
-        max-width: 1200px;
-        padding: 120px 15px;
-
-    }
+  .exciting-events__wrapper {
+    max-width: 1200px;
+    padding: 120px 15px;
+  }
 }
