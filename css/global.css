@@ -17,6 +17,7 @@ font-family: "Lato", serif;
 
 :root {
   --title-color: rgb(228, 149, 76);
+  --svg-color:#e4954c;
   --btn-hover-color: #fff;
   --st-background-color: #212020;
   --item-description-color: rgb(215, 215, 215);
@@ -29,6 +30,7 @@ font-family: "Lato", serif;
   --dark-default-color: #000;
   --quote-icon-color: #9a5e33;
   --advantages-description-color: rgb(195, 195, 195);
+  --lite-gray: #4d4d4d;
   scroll-behavior: smooth;
   background-color: var(--st-background-color);
 }

@@ -34,7 +34,7 @@
     line-height: 25.5px;
 }
 .footer__contacts__link{
-  color: rgb(195, 195, 195);
+  color: var(--advantages-description-color);
     text-decoration: none;
     font-family: "Lato", sans-serif;
     font-style: normal;
@@ -78,13 +78,13 @@
   line-height: 37.375px;
   text-align: center;
   text-decoration: none;
-  color: #fff;
+  color: var(--white-default-color);
   height: auto;
   font-style: normal;
 }
 .footer__crumb__link {
   font-size: 17px;
-  color: rgb(195, 195, 195);
+  color: var(--advantages-description-color);
   font-weight: 400;
   font-style: normal;
   font-family: "Lato", sans-serif;
@@ -98,7 +98,7 @@
 /*global*/
 .logo_2gS {
   width: 15px;
-  fill: #e4954c;
+  fill: var(--svg-color);
 }
 /*footer working*/
 .footer__working{
@@ -117,7 +117,7 @@
   height: 34px;
 }
 .footer__working__span-white{
-  color: #fff;
+  color: var(--white-default-color);
   font-size: 17px;
   font-weight: 700;
   font-family: "Lato", sans-serif;
@@ -125,7 +125,7 @@
   line-height: 25.5px;
 }
 .footer__working__main-span{
-  color: rgb(195, 195, 195);
+  color: var(--advantages-description-color);
   font-family: "Lato", sans-serif;
   font-style: normal;
   font-size: 17px;
@@ -153,14 +153,14 @@
   content: "";
   height: 0.5px;
   display: block;
-  background-color: #2b2b2b;
+
   top: 0;
   width: 100%;
-  background-color: #4d4d4d;
+  background-color: var(--lite-gray);
 }
 .footer__about__createdby {
   text-align: center;
-  color: rgb(215, 215, 215);
+  color: var(--item-description-color);
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 400;
