@@ -98,7 +98,7 @@
 /*global*/
 .logo_2gS {
   width: 15px;
-  fill: var(--svg-color);
+  fill: var(--title-color);
 }
 /*footer working*/
 .footer__working{
