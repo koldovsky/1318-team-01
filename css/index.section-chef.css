@@ -1,11 +1,11 @@
-.chef-message container{
+.chef-message {
     position: relative;
     padding: 90px 0px;
     display: inline-block;
     z-index: 1;
 }
 
-.chef-message container::before {
+.chef-message::before {
     content: "";
     display: block;
     position: absolute;
@@ -18,7 +18,7 @@
     opacity: .2;
 }
 
-.chef-message container::after {
+.chef-message::after {
     content: "";
     position: absolute;
     top: 0;
@@ -34,7 +34,7 @@
 }
 
 @media (max-width: 991px) {
-    .chef-message container::after {
+    .chef-message::after {
         background-size: auto 100%;
         background-position: left top;
     }
@@ -48,7 +48,7 @@
 }
 
 @media (min-width: 992px) {
-    .chef-message container::after {
+    .chef-message::after {
         background-size: cover;
         background-position: left center;
     }
