@@ -26,7 +26,7 @@
     background-image: url(../assets/images/chef/background-chef.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: center;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -36,7 +36,7 @@
 @media (max-width: 991px) {
     .chef-message::after {
         background-size: auto 100%;
-        background-position: left top;
+        background-position: center;
     }
 
     .chef-message__text {
@@ -50,7 +50,7 @@
 @media (min-width: 992px) {
     .chef-message::after {
         background-size: cover;
-        background-position: left center;
+        background-position: center;
     }
 
     .chef-message__text {
