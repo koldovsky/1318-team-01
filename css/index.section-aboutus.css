@@ -5,7 +5,8 @@
 
 .main__aboutusinner {
     display: flex;
-    justify-content: space-between; /* розподіл простору між блоками */
+    justify-content: space-between;
+    /* розподіл простору між блоками */
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;
@@ -78,9 +79,9 @@ h2 {
 
 .main__aboutus-basket {
     text-align: center;
-    max-width: 530px; /* Максимальна ширина */
-    min-width: 300px; /* Мінімальна ширина */
-    flex: 1; /* Гнучке співвідношення ширини */
+    max-width: 530px;
+    min-width: 300px;
+    flex: 1;
     padding: 0 15px;
 }
 
@@ -109,7 +110,7 @@ h2 {
 }
 
 @media (max-width: 1280px) {
-    .main__aboutusinner{
+    .main__aboutusinner {
         padding: 0px 24px;
     }
 }
