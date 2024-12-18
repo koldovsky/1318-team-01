@@ -1,7 +1,7 @@
 .chef-message {
     position: relative;
     padding: 90px 0px;
-    display: block;
+    display: inline-block;
     z-index: 1;
 }
 
