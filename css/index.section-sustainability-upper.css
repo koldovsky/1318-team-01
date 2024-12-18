@@ -1,35 +1,104 @@
-.sustainability {
-    background-color: #212020;
-    padding: 120px 0px;   
+.bread-philosophy {
+    background-image: url(../assets/images/sustainability/sustainability_upper_background_image.png);
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+    display: flex;
 }
 
- .sustainability__button {
+.container {
+    display: flex;
+    max-width: 1200px;
+    gap: 2rem;
+}
+
+.image-container {
+    flex: 1;
+}
+
+.bread-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.content-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle {
+    color: #ff8c42;
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.title .dot {
+    color: #ff8c42; /* Orange dot */
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.wheat-icon {
+    font-size: 1rem;
+}
+
+.line {
+    color: #ff8c42;
+    font-weight: bold;
+}
+
+.highlight {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.btn {
+    width: 200px;
     color: white;
     cursor: pointer;
     font-weight: bold;
     user-select: none;
     padding: 15px 30px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 30px;
     display: inline-block;
+    text-decoration: none;
     font-family: sans-serif;
     background-color: #9a5e33;
     transition: background-color 0.3s ease;
-  }
+}
 
-  .sustainability__button:hover {
-    background-color: #E4954C; /* Колір кнопки */
-  }
+.btn:hover {
+    background-color: #E4954C;
+}
 
-  .button__link {
-    text-decoration: none;
-    color: inherit; /* Спадковий колір */
-  }
-
-  .sustainability__button:focus {
+.btn:focus {
     outline: 2px solid #0056b3;
-  }
+}
 
-  .sustainability__button:active {
+.btn:active {
     background-color: #0056b3;
-  }
+}
