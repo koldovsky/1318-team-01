@@ -1,6 +1,6 @@
 @import "global.css";
+@import "global.header-nav.css";
 @import "index.header-hero.css";
-@import "index.header-nav.css";
 @import "index.section-steps.css";
 @import "index.section-aboutus.css";
 @import "index.section-exciting_event.css";
