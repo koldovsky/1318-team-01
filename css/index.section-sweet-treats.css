@@ -12,23 +12,131 @@
     .sweet-treats__title {
       padding: 30px;
       font-size: clamp(14px, 2vw, 38px);
+      color: var(--title-color);
     }
     .sweet-treats__subtitle {
       font-size: clamp(34px, 1vw, 44px);
       color: var(--btn-hover-color);
-      position: relative;
+      display: inline;
     }
     .sweet-treats__separator {
       font-size: clamp(34px, 1vw, 44px);
       color: var(--title-color);
+      display: inline;
     }
     .sweet-treats__row {
       display: flex;
       align-items: center;
     }
     .locations__divider {
-      height: 25px;
+      height: 32px;
+      width: 272px;
       width: 100%;
+      margin-top: 25px;
+      margin-bottom: 25px;
     }
+    .sweet-treats__description {
+      font-family: "Lato", sans-serif;
+      font-size: 19px;
+      margin-bottom: 35px;
+    }
+  }
+  .sweet-treats__content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    overflow: hidden;
+  }
+
+  .sweet-treats__list {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .sweet-treats__card {
+    scroll-snap-align: center;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .product-card__image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding-bottom: 10px;
+  }
+  .product-card__details,
+  .product-card__description {
+    padding-top: 20px;
+  }
+
+  .product-card__image {
+    max-width: 100%;
+    height: 192px;
+    width: 232px;
+  }
+  .product-card__title {
+    color: var(--white-default-color);
+    font-family: "Prata", serif;
+    font-size: 22px;
+    margin: 10px;
+  }
+  .product-card__detail {
+    font-family: "Lato", sans-serif;
+    color: var(--white-default-color);
+    font-size: 17px;
+    padding-bottom: 15px;
+  }
+  .product-card__label {
+    font-family: "Lato", sans-serif;
+    color: var(--title-color);
+    font-size: 17px;
+    font-weight: bold;
+    margin: 25px;
+    margin-right: 1px;
+  }
+  .product-card__ingredients {
+    color: var(--item-description-color);
+    font-family: "Lato", sans-serif;
+    font-size: 17px;
+  }
+  .product-card__ingredient {
+    color: var(--white-default-color);
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .sweet-treats__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (min-width: 600px) {
+    .sweet-treats__list {
+      grid-auto-columns: calc(50% - 1rem);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .sweet-treats__list {
+      grid-auto-columns: calc(33.333% - 1rem);
+    }
+  }
+
+  .sweet-treats__list {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

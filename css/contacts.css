@@ -1,0 +1,111 @@
+.header__img-cover {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Важливо для псевдоелементів */
+}
+
+.header__img-cover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/global/background-img.png");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%); /* Сірий лише для фону */
+  z-index: -1; /* За контентом */
+}
+
+.header__img-cover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 32, 32, 0.93); /* Чорний фон з прозорістю */
+  z-index: -1; /* Також за контентом */
+}
+.contacts__header__hero {
+  text-align: center;
+  max-width: 1218px;
+  margin: 0 auto;
+  padding: 70px 24px 80px 24px;
+}
+.contacts__header__hero__title {
+  display: block;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 49.4px;
+  font-family: "Prata", serif;
+  color: var(--white-default-color);
+}
+.contacts__header__hero__paragraph {
+  margin-top: 25px;
+}
+.contacts-span {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Lato", serif;
+  font-style: normal;
+  line-height: 25.5px;
+  text-decoration: underline;
+  color: var(--title-color);
+}
+.contacts__header__hero__home-link {
+  text-decoration: none;
+  font-size: 17px;
+  font-style: normal;
+  line-height: 25.5px;
+  font-family: "Lato", serif;
+  font-weight: 400;
+  color: var(--advantages-description-color);
+}
+
+.section-contacts__map {
+  filter: grayscale(100%);
+}
+.contacts-map {
+  width: 100%;
+  aspect-ratio: 5/2.9;
+}
+@media (min-width: 768px) {
+  .contacts__header__hero {
+    max-width: 1234px;
+    padding: 70px 32px 80px 32px;
+  }
+  .contacts__header__hero__title {
+    font-size: 38px;
+  }
+  .contacts-map {
+    width: 100%;
+    aspect-ratio: 5/1.999998;
+  }
+}
+@media (min-width: 992px) {
+  .contacts__header__hero {
+    max-width: 1250px;
+    padding: 70px 40px 80px 40px;
+  }
+  .contacts__header__hero__title {
+    font-size: 42px;
+    line-height: 54.6px;
+  }
+  .contacts-map {
+    aspect-ratio: 5/1.99998;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts__header__hero {
+    max-width: 1200px;
+    padding: 120px 15px;
+  }
+  .contacts-map {
+    aspect-ratio: 5/1.9998;
+  }
+}

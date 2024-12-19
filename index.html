@@ -29,18 +29,20 @@
 
   <body>
     <header class="header">
-      <nav
-        class="header__nav"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="global.header-nav.partial.html"
-      ></nav>
-      <div
-        class="header__hero"
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.header-hero.partial.html"
-      ></div>
+      <div class="header__background">
+        <nav
+          class="header__nav"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="global.header-nav.partial.html"
+        ></nav>
+        <div
+          class="header__hero"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.header-hero.partial.html"
+        ></div>
+      </div>
     </header>
     <main>
       <section
@@ -73,14 +75,13 @@
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
-        data-hx-get="index.section-locations.partial.html"
+        data-hx-get="global.section-locations.partial.html"
       ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.section-chef.partial.html"
       ></section>
-      <!-- Назва: "index" тому що тільки на головній, "section" - частина, "sustainbaility" - її назва, "upper/lower" - її положення  -->
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -97,5 +98,6 @@
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
     ></footer>
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>

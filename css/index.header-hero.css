@@ -5,10 +5,17 @@
     background-position: center;
     height: 100%;
     padding: 100px 0px 60px;
+    @media screen and (min-width:1100px) {
+        padding-top: 160px;
+    }
+
 }
 
-.header__hero-text, .header__hero-locations{
+.header__hero-text{
     padding: 0px 24px;
+    @media screen and (min-width:1100px) {
+        padding-bottom: 100px;
+    }
 }
 
 .header__hero-main{
@@ -17,6 +24,12 @@
     justify-content: flex-start;
     gap: 20px;
     width: 100%;
+    @media screen and (min-width:800px) {
+        max-width: 500px;
+    }
+    @media screen and (min-width:1100px) {
+        max-width: 700px;
+    }
 }
 
 .header__hero-welcome{
@@ -27,10 +40,24 @@
     margin: 0;
     text-align: left;
     padding-top: 20px;
+
+    @media screen and (min-width:800px) {
+        font-size: 65px;
+        
+    }
+    @media screen and (min-width:1100px) {
+        font-size: 74px;
+        
+    }
+    
 }
 
 .header__hero-title{
     font-size: 14px;
+
+    @media screen and (min-width:800px){
+        font-size: 26px;
+    }
 }
 
 .header__hero-description{
@@ -49,12 +76,20 @@
     font-family: "Lato", sans-serif;
     font-style: normal;
     font-size: 14px;
+    padding: 0px 24px;
+    @media screen and (min-width:800px){
+        flex-direction: row;
+    }
+    @media screen and (min-width:1100px){
+        flex-direction: row;
+        gap: 25px;
+        max-width: 600px;
+    }
 }
 
 .header__hero-location {
     display: flex;
     gap: 10px;
-    align-items: center;
 }
 
 .header__hero-address{
@@ -70,4 +105,9 @@
 .header__hero-icon{
     fill: var(--location-icon-color);
     width: 20px;
+    @media screen and (min-width:1100px) {
+        width: 30px;
+        
+    }
+    align-items: flex-start;
 }
