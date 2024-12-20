@@ -3,7 +3,7 @@
     padding: 90px 0px;
     display: block;
     z-index: 1;
-    width: 100%; /* added */
+    width: 100%;
 }
 
 .chef-message::before {
@@ -140,6 +140,7 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 100%; /* added */
-    margin: auto; /* added */
+    max-width: 100%;
+    margin: 0; /* added 2 */
+    gap: 0; /* added 2 */
 }
