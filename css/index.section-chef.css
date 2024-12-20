@@ -1,8 +1,9 @@
 .chef-message {
     position: relative;
     padding: 90px 0px;
-    display: flex; /* block; */
+    display: /* flex; */ block;
     z-index: 1;
+    width: 100%; /* added */
 }
 
 .chef-message::before {
