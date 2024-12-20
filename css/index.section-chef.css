@@ -1,3 +1,7 @@
+.chef {
+    display: flex;
+}
+
 .chef-message {
     position: relative;
     padding: 90px 0px;
