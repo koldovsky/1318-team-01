@@ -95,7 +95,7 @@
     gap: 15px;
     justify-content: space-between;
     height: auto;
-    width: 100%; /* added */
+    width: 100%;
     padding: 30px 24px;
 }
 
@@ -140,10 +140,9 @@
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 1170px; /* added 3 */
-    width: 100%; /* added 5 */
-    /* max-width: 100%; added 4 закоментовано */
-    margin: 0; /* added 2 */
-    gap: 0; /* added 2 */
+    /* max-width: 1170px; */
+    max-width: 100%;
+    margin: 0;
+    gap: 0;
     
 }
