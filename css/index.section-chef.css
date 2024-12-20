@@ -1,7 +1,7 @@
 .chef-message {
     position: relative;
     padding: 90px 0px;
-    display: /* flex; */ block;
+    display: block;
     z-index: 1;
     width: 100%; /* added */
 }
@@ -95,6 +95,7 @@
     gap: 15px;
     justify-content: space-between;
     height: auto;
+    width: 100%; /* added */
     padding: 30px 24px;
 }
 
@@ -106,14 +107,12 @@
 @media (max-width: 992px) {
     .advantages__item {
         flex: 1 1 calc(50% - 15px);
-        /* z-index: 1; */
     }
 }
 
 @media (max-width: 576px) {
     .advantages__item {
         flex: 1 1 100%;
-        /* z-index: 1; */
     }
 }
 
@@ -141,9 +140,6 @@
 .container {
     display: flex;
     flex-direction: column;
+    max-width: 100%; /* added */
+    margin: auto; /* added */
 }
-
-/* section {
-    display: block;
-    width: 100%;
-} */
