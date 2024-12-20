@@ -144,5 +144,6 @@
     max-width: 100%;
     margin: 0;
     gap: 0;
-    
+    padding: 140px 40px; /* added */
+
 }
