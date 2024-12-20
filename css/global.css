@@ -30,6 +30,7 @@ font-family: "Lato", serif;
   --dark-default-color: #000;
   --quote-icon-color: #9a5e33;
   --advantages-description-color: rgb(195, 195, 195);
+  --hr-default-style: 1px solid var(--recipe-bg-color);
   scroll-behavior: smooth;
   background-color: var(--st-background-color);
 }
@@ -59,4 +60,14 @@ ul li {
 .container {
   max-width: 1170px;
   margin: auto;
+}
+
+.single-recipe__title{
+  color: var(--title-color);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.2;
+  font-family: "Prata", serif;
+  margin-bottom: 16px;
+
 }
