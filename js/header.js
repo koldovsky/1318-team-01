@@ -13,23 +13,4 @@ btnSub.addEventListener("click", () => {
     header.classList.remove("nav-visible");
   });
   
-const headerHype = document.querySelector(".header__hype");
-const headerCloneHypeContainer = document.querySelector(".header__clone-hype");
-
-function cloneHeaderHype() {
-  if (window.innerWidth >= 1000) {
-    if (!headerCloneHypeContainer.querySelector(".header__hype")) {
-      const clonedHype = headerHype.cloneNode(true);
-      headerCloneHypeContainer.appendChild(clonedHype);
-    }
-    headerHype.style.display = "none";
-  } else {
-    headerCloneHypeContainer.innerHTML = "";
-    headerHype.style.display = "flex";
-  }
-}
-
-cloneHeaderHype();
-window.addEventListener("resize", cloneHeaderHype);
-
 
