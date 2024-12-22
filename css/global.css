@@ -22,15 +22,16 @@ font-family: "Lato", serif;
   --item-description-color: rgb(215, 215, 215);
   --location-color: #ffffffb3;
   --location-icon-color: rgb(154, 94, 51);
-  --recipe-bg-color:  #2B2B2B;
-  --description-recipes-color:#d7d7d7;
-  --recipe-text-color: #C3C3C3;
+  --recipe-bg-color: #2b2b2b;
+  --description-recipes-color: #d7d7d7;
+  --recipe-text-color: #c3c3c3;
   --white-default-color: #ffff;
-  --devider-color:#9A5E33;
+  --devider-color: #9a5e33;
   --dark-default-color: #000;
   --quote-icon-color: #9a5e33;
   --advantages-description-color: rgb(195, 195, 195);
   --hr-default-style: 1px solid var(--recipe-bg-color);
+  --hr-section-divider: 3px solid rgb(87 87 87);
   scroll-behavior: smooth;
   background-color: var(--st-background-color);
 }
@@ -62,12 +63,11 @@ ul li {
   margin: auto;
 }
 
-.single-recipe__title{
+.single-recipe__title {
   color: var(--title-color);
   font-size: 22px;
   font-weight: 400;
   letter-spacing: 0.2;
   font-family: "Prata", serif;
   margin-bottom: 16px;
-
 }
