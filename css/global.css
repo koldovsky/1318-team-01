@@ -71,3 +71,8 @@ ul li {
   font-family: "Prata", serif;
   margin-bottom: 16px;
 }
+
+hr {
+  border: var(--hr-default-style);
+  margin-bottom: 48px;
+}

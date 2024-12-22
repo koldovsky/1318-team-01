@@ -149,10 +149,84 @@
 
 /* More recipes section*/
 .more-recipes {
-  padding: 48px 20px;
+  padding: 48px 40px;
+  .more-recipe__carousel {
+    position: relative;
+    width: 100%;
+    .more-recipe__carousel-control {
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      background: var(--white-default-color);
+      color: var(--dark-default-color);
+      border: none;
+      border-radius: 100%;
+      padding: 6px 12px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .more-recipe__carousel-track {
+      display: flex;
+      gap: 60px;
+      transition: transform 0.5s ease-in-out;
+      .more-recipes__card {
+        display: flex;
+        flex: 0 0 100%; /* Ensure one card is visible at a time */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+
+        more-recipes__card-img {
+          width: 100%;
+          object-fit: cover;
+        }
+
+        .more-recipes__card-title {
+          font-family: "Prata", serif;
+          font-size: 22px;
+          font-weight: 300;
+          color: var(--white-default-color);
+        }
+        .more-recipes__card-divider {
+          border: 2px solid var(--devider-color);
+          height: 2px;
+          width: 15%;
+        }
+        .more-recipes__card-ingredients {
+          font-family: "Lato", sans-serif;
+          font-size: 17px;
+          color: var(--description-recipes-color);
+          line-height: 1.5;
+          .more-recipes__card-ingredients-label {
+            color: var(--title-color);
+          }
+        }
+      }
+      .recipes__card-button {
+        display: inline-block;
+        padding: 10px 32px;
+        border-radius: 100px;
+        text-decoration: none;
+        background-color: var(--quote-icon-color);
+        color: var(--white-default-color);
+        font-size: 15px;
+        font-weight: 700;
+        font-family: "Lato", sans-serif;
+
+        &:hover {
+          color: var(--dark-default-color);
+          background-color: var(--white-default-color);
+          transition: all ease-in-out 0.3s;
+        }
+      }
+    }
+  }
 }
 
-hr {
-  border: var(--hr-default-style);
-  margin-bottom: 48px;
+.more-recipe__carousel-control.prev {
+  left: -10px;
+}
+
+.more-recipe__carousel-control.next {
+  right: -10px;
 }
