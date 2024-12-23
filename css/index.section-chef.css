@@ -4,6 +4,7 @@
     display: block;
     z-index: 1;
     width: 100%;
+    max-width: 100%; /* added */
 }
 
 .chef-message::before {
@@ -28,7 +29,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left top;
-    max-width: 100%; /* added */
     width: 100%;
     height: 100%;
     z-index: -1;
