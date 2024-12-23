@@ -52,6 +52,7 @@
     .chef-message::after {
         background-size: cover;
         background-position: center;
+        max-width: 100%; /* added */
     }
 
     .chef-message__text {
