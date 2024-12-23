@@ -11,14 +11,22 @@ document.body.addEventListener("htmx:afterSettle", () => {
 });
 
 let currentSlide = 0;
+let slidesToShow = 1;
+
+function updateSlidesToShow() {
+  slidesToShow = window.innerWidth >= 750 ? 2 : 1; // Два елементи при ширині >= 750px
+  slidesToShow = window.innerWidth >= 950 ? 3 : 2; // Два елементи при ширині >= 750px
+
+  updateCarousel();
+}
 
 function updateCarousel() {
   console.log(`Current slide: ${currentSlide}`);
   const track = document.querySelector(".more-recipe__carousel-track");
   const slides = document.querySelectorAll(".more-recipes__card");
   const slideWidth = slides[0].offsetWidth;
-
-  track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+  const gap = 32;
+  track.style.transform = `translateX(-${currentSlide * (slideWidth + gap)}px)`;
 }
 
 function prevSlide() {

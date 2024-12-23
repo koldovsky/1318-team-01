@@ -1,0 +1,27 @@
+.single-recipe__background {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/images/global/background-img.png);
+}
+.single-header__hero {
+  text-align: center;
+  padding: 70px 0;
+
+  .single-header__hero-title {
+    font-family: "Prata", serif;
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: var(--white-default-color);
+  }
+  .single-header__hero-subtitle {
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    .single-header__hero-subtitle-link {
+      text-decoration: underline;
+      color: var(--title-color);
+      font-weight: 700;
+      font-size: inherit;
+    }
+  }
+}

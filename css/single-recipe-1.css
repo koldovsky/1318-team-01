@@ -1,7 +1,6 @@
 .recipe__details {
   border-top: var(--hr-default-style);
-  border-bottom: var(--hr-section-divider);
-  padding: 100px 20px 20px 20px;
+  padding: 100px 40px 20px 40px;
   background-color: var(--st-background-color);
 
   .recipe__details-container {
@@ -77,8 +76,9 @@
 /* Instruction section*/
 
 .recipe__instruction {
-  padding: 32px;
-  border-bottom: var(--hr-section-divider);
+  padding: 32px 40px;
+  display: flex;
+  flex-direction: column;
 
   .recipe__instruction-list {
     font-size: 17px;
@@ -91,7 +91,7 @@
 
     @media (min-width: 750px) {
       column-count: 2; /* Two columns for wider screens */
-      column-gap: 64px;
+      column-gap: 120px;
     }
     .recipe__instruction-item {
       break-inside: avoid;
@@ -101,6 +101,7 @@
         margin-bottom: 56px;
 
         @media (min-width: 750px) {
+          margin-bottom: 0;
         }
       }
 
@@ -111,7 +112,7 @@
   }
 
   .recipe__instruction-tips {
-    margin: 64px 0;
+    margin: 32px 0;
     display: grid;
     grid-template-columns: 1fr;
     gap: 48px;
@@ -150,11 +151,16 @@
 /* More recipes section*/
 .more-recipes {
   padding: 48px 40px;
+  border-bottom: var(--hr-section-divider);
 
   .more-recipe__carousel {
     position: relative;
     overflow: hidden;
     width: 100%;
+    padding: 72px 24px;
+    border-bottom: var(--hr-default-style);
+    border-top: var(--hr-default-style);
+
     .more-recipe__carousel-control {
       position: absolute;
       top: 50%;
@@ -165,14 +171,25 @@
       border-radius: 100%;
       padding: 6px 12px;
       cursor: pointer;
-      z-index: 2;
+      z-index: 20;
 
+      @media (min-width: 950px) {
+        background: none; /* Видаляємо фон */
+        font-size: 24px; /* Збільшуємо розмір кнопок */
+        color: var(--recipe-text-color);
+      }
       &.prev {
-        left: -20px;
+        left: 2px;
+        @media (min-width: 950px) {
+          left: -12px;
+        }
       }
 
       &.next {
-        right: -20px;
+        right: 2px;
+        @media (min-width: 950px) {
+          right: -12px;
+        }
       }
     }
 
@@ -181,9 +198,8 @@
       transition: transform 0.5s ease-in-out;
       width: 100%;
       height: 100%;
-
+      gap: 32px;
       .more-recipes__card {
-        position: relative;
         display: flex;
         flex: 0 0 100%;
         flex-direction: column;
@@ -191,9 +207,18 @@
         gap: 18px;
         width: 100%;
         height: 100%;
+
+        @media (min-width: 750px) {
+          flex: 0 0 calc(50% - 16px);
+        }
+
+        @media (min-width: 950px) {
+          flex: 0 0 calc(33.33% - 21.33px); /* Три елементи при ширині ≥ 950px */
+        }
+
         .more-recipes__card-img {
           width: 100%;
-          object-fit: cover;
+          object-fit: contain;
         }
 
         .more-recipes__card-title {
