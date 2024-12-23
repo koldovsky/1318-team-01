@@ -4,7 +4,6 @@
     display: block;
     z-index: 1;
     width: 100%;
-    max-width: 100%; /* added */
 }
 
 .chef-message::before {
