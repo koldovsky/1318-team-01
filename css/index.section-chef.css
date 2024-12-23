@@ -137,7 +137,8 @@
     height: 33.99px;
 }
 
-.container {
+.chef-message,
+.advantages {
     display: flex;
     flex-direction: column;
     /* max-width: 1170px; */
