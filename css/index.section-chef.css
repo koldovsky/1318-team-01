@@ -1,4 +1,4 @@
-.chef-message {
+.message {
     position: relative;
     padding: 90px 0px;
     display: block;
@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.chef-message::before {
+.message::before {
     content: "";
     display: block;
     position: absolute;
@@ -19,7 +19,7 @@
     opacity: .2;
 }
 
-.chef-message::after {
+.message::after {
     content: "";
     position: absolute;
     top: 0;
@@ -35,12 +35,12 @@
 }
 
 @media (max-width: 991px) {
-    .chef-message::after {
+    .message::after {
         background-size: auto 100%;
         background-position: left top;
     }
 
-    .chef-message__text {
+    .message__text {
         width: 100%;
         padding: 5px 0px 5px 30px;
         position: relative;
@@ -49,12 +49,12 @@
 }
 
 @media (min-width: 992px) {
-    .chef-message::after {
+    .message::after {
         background-size: cover;
         background-position: center;
     }
 
-    .chef-message__text {
+    .message__text {
         max-width: 50%;
         padding: 5px 0px 5px 30px;
         position: relative;
@@ -62,14 +62,14 @@
     }
 }
 
-.chef-message__quote-icon {
+.message__quote-icon {
     color: var(--quote-icon-color);
     width: 50px;
     height: 50px;
     padding-left: 30px;
 }
 
-.chef-message__text {
+.message__text {
     color: var(--btn-hover-color);
     font-family: "Prata", serif;
     font-size: 24px;
@@ -78,7 +78,7 @@
     padding: 5px 0px 5px 30px;
 }
 
-.chef-message__author {
+.message__author {
     color: var(--title-color);
     font-family: "Great Vibes", undefined;
     font-size: 14px;
@@ -137,7 +137,8 @@
     height: 33.99px;
 }
 
-.chef {
+.message-container,
+.advantages-container {
     display: flex;
     flex-direction: column;
     /* max-width: 1170px; */
