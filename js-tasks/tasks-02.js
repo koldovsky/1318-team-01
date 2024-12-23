@@ -60,3 +60,6 @@ function past(hours, minutes, seconds){
 
 const isDivisible = (num, x, y) => (num % x === 0 && num % y === 0);
 
+// https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
+
+circleCircumference = circle => 2 * Math.PI * circle.radius;
