@@ -153,8 +153,8 @@
 
   .more-recipe__carousel {
     position: relative;
+    overflow: hidden;
     width: 100%;
-
     .more-recipe__carousel-control {
       position: absolute;
       top: 50%;
@@ -179,10 +179,11 @@
     .more-recipe__carousel-track {
       display: flex;
       transition: transform 0.5s ease-in-out;
-      gap: 36px;
       width: 100%;
       height: 100%;
+
       .more-recipes__card {
+        position: relative;
         display: flex;
         flex: 0 0 100%;
         flex-direction: column;
