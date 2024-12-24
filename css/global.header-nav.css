@@ -204,6 +204,8 @@
     }
 
     .header__nav {
+        max-width: 1200px;
+        margin: auto;
         background-color: #212020;
         display: grid;
         grid-template-columns: repeat(10, 1fr);
@@ -217,7 +219,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        max-width: 1170px;
+        max-width: 1200px;
         margin: auto;
         height: 35px;
         padding: 0px 20px;
