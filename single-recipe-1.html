@@ -20,6 +20,22 @@
     ></script>
   </head>
   <body>
+    <header class="header">
+      <div class="header__background single-recipe__background">
+        <nav
+          class="header__nav"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="global.header-nav.partial.html"
+        ></nav>
+        <div
+          class="header__hero-single-recipe-1"
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="single-recipe-1.single-hero.partial.html"
+        ></div>
+      </div>
+    </header>
     <section
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
@@ -37,5 +53,11 @@
       data-hx-swap="outerHTML"
       data-hx-get="single-recipe-1.more-recipes.partial.html"
     ></section>
+    <footer
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="global.footer.partial.html"
+    ></footer>
+    <script type="module" src="js/single-recipe.js"></script>
   </body>
 </html>
