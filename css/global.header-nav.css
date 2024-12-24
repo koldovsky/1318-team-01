@@ -8,9 +8,12 @@
     text-decoration: none;
 }
 
+.header__menu-link:hover{
+    color: var(--title-color);
+
+}
 
 .header__background {
-    background-color: #212020;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50.7% 0%;
@@ -99,6 +102,7 @@
 .nav-list__item a {
     position: relative;
     display: inline-block;
+
 }
 
 .header__nav-block {
