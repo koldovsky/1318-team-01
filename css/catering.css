@@ -1,3 +1,4 @@
-/*.catering__hero{
-    background-image: ;
-}*/
+.catering__hero{
+    background-image: url(../assets/images/catering/background_catering.png);
+    height: 100%;
+}
