@@ -20,10 +20,10 @@
     ></script>
   </head>
   <body>
-    <header class="header">
-      <div class="header__background single-recipe__background">
+    <header class="header single-recipe__background">
+      <div class="header__background">
         <nav
-          class="header__nav"
+          class="header__nav single-header__nav"
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
           data-hx-get="global.header-nav.partial.html"
@@ -36,6 +36,7 @@
         ></div>
       </div>
     </header>
+
     <section
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
