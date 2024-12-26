@@ -1,0 +1,39 @@
+.header--catering {
+    background-image: linear-gradient(#1f1f208c, #12121399), url("../assets/images/catering/background_catering.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;  
+  }
+
+  /*section{
+    background-color: rgba(0, 0, 0, 0.8);
+  }*/
+
+  .catering__hero{
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .header--catering .header__nav, .header--catering .header__clone-hype {
+    background: none;
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+  }
+
+  .header--catering .header__nav .header__menu-link,
+  .header--catering .header__nav .header__hype-text,
+  .header--catering .header__nav .header__hype-contacts,
+  .header--catering .header__nav .header__brand-link,
+  .header--catering .header__nav .header__navicon,
+  .header--catering .header__nav .header__navicon::before,
+  .header--catering .header__nav .header__navicon::after,
+  .header--catering .header__nav .header__social svg {
+      color: white;
+      fill: white;
+  }
+  
+  @media (min-width: 1000px) {
+      .header--catering .header__nav {
+         background-color: none;
+      }
+  }

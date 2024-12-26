@@ -6,7 +6,6 @@
 .main__aboutusinner {
     display: flex;
     justify-content: space-between;
-    /* розподіл простору між блоками */
     align-items: center;
     max-width: 1170px;
     margin: 0 auto;

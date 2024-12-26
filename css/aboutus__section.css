@@ -72,3 +72,18 @@
       }
       
 }
+.our-story__wrap{
+  max-width: 1218px;
+  padding: 0px 24px;
+  margin: 0 auto;
+
+}
+.timeline__event{
+  background-color: var(--recipe-bg-color);
+  
+}
+.timeline{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

@@ -1,3 +1,12 @@
+.single-recipe__background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(18, 18, 19, 0.9)),
+    url(../assets/images/recipes/recipes-img/single-recipe-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
 .single-header__hero {
   text-align: center;
   padding: 70px 0;

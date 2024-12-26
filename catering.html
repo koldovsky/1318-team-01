@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipes Page | Bakery Website</title>
+    <title>Catering Page | Bakery Website</title>
     <link
       rel="icon"
       type="image/png"
@@ -20,45 +20,31 @@
     ></script>
   </head>
   <body>
-    <header class="header single-recipe__background">
+    <header class="header header--catering">
       <div class="header__background">
         <nav
-          class="header__nav single-header__nav"
+          class="header__nav"
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
           data-hx-get="global.header-nav.partial.html"
         ></nav>
         <div
-          class="header__hero-single-recipe-1"
+          class="catering__hero"
           data-hx-trigger="load"
           data-hx-swap="outerHTML"
-          data-hx-get="single-recipe-1.single-hero.partial.html"
+          data-hx-get="catering.hero-partial.html"
         ></div>
       </div>
     </header>
 
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="single-recipe-1.recipe-details.partial.html"
-    ></section>
-
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="single-recipe-1.recipe-instruction.partial.html"
-    ></section>
-
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="single-recipe-1.more-recipes.partial.html"
-    ></section>
+    <section>
+      
+    </section>
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
     ></footer>
-    <script type="module" src="js/single-recipe.js"></script>
+    
   </body>
 </html>
