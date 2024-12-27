@@ -1,78 +1,21 @@
-.bread-philosophy {
-    background-image: url(../assets/images/sustainability/sustainability_upper_background_image.png);
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 2rem;
-    display: flex;
+.section--two-columns {
+  background-image: url(../assets/images/sustainability/sustainability_upper_background_image.png);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
-.container {
-    display: flex;
-    max-width: 1200px;
-    gap: 2rem;
+.section__column {
+  flex: 1;
+  min-width: 200px;
 }
 
-.image-container {
-    flex: 1;
+.section__column--left {
+  /* no styles so far */
 }
 
-.bread-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.content-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.subtitle {
-    color: #ff8c42;
-    font-style: italic;
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.title .dot {
-    color: #ff8c42; /* Orange dot */
-}
-
-.divider {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.wheat-icon {
-    font-size: 1rem;
-}
-
-.line {
-    color: #ff8c42;
-    font-weight: bold;
-}
-
-.highlight {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
-
-.description {
-    font-size: 1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
+.section__column--right {
+  /* no styles so far */
 }
 
 .btn {
