@@ -18,6 +18,36 @@
   /* no styles so far */
 }
 
+.main__sustainability-subtitle {
+    font-family: "Prata", sans-serif;
+    font-size: 42px;
+    color: rgb(255, 255, 255);
+    margin: 15px 0;
+}
+
+.main__aboutus-dot-span {
+    color: rgb(228, 149, 76);
+}
+
+.main__sustainability-spikelet {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.main__sustainability-smalltext {
+    color: rgb(215, 215, 215);
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.main__sustainability-text {
+    color: rgb(195, 195, 195);
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    margin: 25px 0;
+}
+
 .btn {
     width: 200px;
     color: white;
