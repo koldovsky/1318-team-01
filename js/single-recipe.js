@@ -17,8 +17,8 @@ let slidesToShow = 1;
 let slides = [];
 
 function updateSlidesToShow() {
-  slidesToShow = window.innerWidth >= 750 ? 2 : 1; // Two items for width >= 750px
-  slidesToShow = window.innerWidth >= 950 ? 3 : 2; // Three items for width >= 950px
+  slidesToShow = window.innerWidth >= 750 ? 2 : 1;
+  slidesToShow = window.innerWidth >= 950 ? 3 : 2;
 
   updateCarousel();
 }
@@ -35,13 +35,19 @@ function updateCarousel() {
   const slideWidth = slides[0]?.offsetWidth || 0; // Ensure slides[0] exists
   const gap = 32;
 
+  if (currentSlide >= slides.length - 2) {
+    currentSlide = 0; // Reset to the first slide if at the end
+  } else if (currentSlide < 0) {
+    currentSlide = slides.length - 1; // Move to the last slide if before the first
+  }
+
   track.style.transform = `translateX(-${currentSlide * (slideWidth + gap)}px)`;
 }
 
 function prevSlide() {
   console.log("Prev button clicked");
 
-  currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 1;
+  currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 3;
   updateCarousel();
 }
 
@@ -85,11 +91,6 @@ function cloneSlide(slide) {
 }
 
 window.addEventListener("resize", () => {
-  setupCarousel();
-  updateSlidesToShow();
-});
-
-window.addEventListener("DOMContentLoaded", () => {
   setupCarousel();
   updateSlidesToShow();
 });
