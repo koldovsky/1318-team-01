@@ -1,5 +1,8 @@
-.section--two-columns {
+.section {
   background-image: url(../assets/images/sustainability/sustainability_upper_background_image_new.webp);
+}
+
+.section--two-columns {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
