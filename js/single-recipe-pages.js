@@ -238,37 +238,6 @@ const singleRecipes = [
   },
 ];
 
-function SetRecipes(singleRecipes) {
-  let recipesHTML = "";
-  for (const singleRecipe of singleRecipes) {
-    recipesHTML += `
-         <article class="recipe__card">
-          <img
-            src="${singleRecipe.image.src}"
-            alt="${singleRecipe.image.alt}"
-            class="${singleRecipe.image.class}"
-          />
-          <h3 class="recipe__card-title">${singleRecipe.name}</h3>
-          <hr class="recipe__card-divider" />
-          <p class="recipe__card-ingredients">
-            <span class="recipe__card-ingredients-label">Ingredients:</span> ${singleRecipe.description.trim()}
-          </p>
-          <a
-            href="single-recipe-${singleRecipe.id}.html"
-            class="recipes__card-button recipes__card-button--primary"
-            data-id="${singleRecipe.id}"
-          >
-            Read more
-          </a>
-        </article>
-    `;
-  }
-  const RecipesContainer = document.querySelector(".recipes");
-  RecipesContainer.innerHTML = recipesHTML;
-}
-
-SetRecipes(singleRecipes);
-
 const RecipeUtils = {
   renderHero(name) {
     return `<h3 class="single-header__hero-title">${name}</h3>
@@ -377,5 +346,5 @@ const renderRecipeDetails = (recipe) => {
 };
 
 // Пошук рецепта з ID "2" та рендеринг
-const recipe = singleRecipes.find((r) => r.id === "2");
+const recipe = singleRecipes.find((r) => r.id === "1");
 renderRecipeDetails(recipe);
