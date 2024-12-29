@@ -1,8 +1,9 @@
 function init() {
   import("./header.js");
   import("./recipe.js");
-  import("./single-recipe.js");
   import("./sweet-treats-carousel.js");
+  import("./contacts.js");
+
 }
 
 const totalPartials = document.querySelectorAll(

@@ -78,6 +78,9 @@
   padding: 32px 40px;
   display: flex;
   flex-direction: column;
+  @media (min-width: 1280px) {
+    padding: 32px 0px;
+  }
 
   .recipe__instruction-list {
     font-size: 17px;

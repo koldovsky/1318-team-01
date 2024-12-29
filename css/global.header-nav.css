@@ -23,6 +23,7 @@
     font-size: 21px;
     font-family: "Prata", serif;
     color: var(--btn-hover-color);
+    text-decoration: none;
 }
 
 .header__hype{
