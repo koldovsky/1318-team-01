@@ -80,6 +80,8 @@
     align-items: center;
     margin-bottom: 0.5rem;
     padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
   }
   .product-card__details,
   .product-card__description {
@@ -89,7 +91,7 @@
   .product-card__image {
     height: 100%;
     width: 100%;
-    overflow: cover;
+    object-fit: cover;
   }
   .product-card__title {
     color: var(--white-default-color);
@@ -127,7 +129,33 @@
     width: 24px;
     height: 24px;
   }
-
+  .sweet-treats__button-prev,
+  .sweet-treats__button-next {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  .sweet-treats__button-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+  .sweet-treats__button-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    transform: translateY(-50%) rotate(180deg);
+  }
+  .sweet-treats__button-prev svg,
+  .sweet-treats__button-next svg {
+    width: 40px;
+    height: 40px;
+  }
   @media (min-width: 600px) {
     .sweet-treats__list {
       grid-auto-columns: calc(50% - 1rem);
