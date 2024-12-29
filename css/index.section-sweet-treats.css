@@ -1,7 +1,7 @@
 .sweet-treats {
   background-color: var(--st-background-color);
   min-width: 320px;
-  padding: 55px 0;
+  padding: 90px 24px;
   .sweet-treats__header {
     display: flex;
     flex-direction: column;
