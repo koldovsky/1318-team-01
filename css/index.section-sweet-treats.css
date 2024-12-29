@@ -1,7 +1,14 @@
 .sweet-treats {
   background-color: var(--st-background-color);
   min-width: 320px;
-  padding: 55px 0;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  .sweet-treats__inner {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
   .sweet-treats__header {
     display: flex;
     flex-direction: column;
@@ -11,16 +18,16 @@
 
     .sweet-treats__title {
       padding: 30px;
-      font-size: clamp(14px, 2vw, 38px);
+      font-size: clamp(1rem, 5vw, 2.375rem);
       color: var(--title-color);
     }
     .sweet-treats__subtitle {
-      font-size: clamp(34px, 1vw, 44px);
+      font-size: clamp(2.125rem, 1vw, 2.75rem);
       color: var(--btn-hover-color);
       display: inline;
     }
     .sweet-treats__separator {
-      font-size: clamp(34px, 1vw, 44px);
+      font-size: clamp(2.125rem, 1vw, 2.75rem);
       color: var(--title-color);
       display: inline;
     }
@@ -29,11 +36,9 @@
       align-items: center;
     }
     .locations__divider {
-      height: 32px;
-      width: 272px;
-      width: 100%;
-      margin-top: 25px;
-      margin-bottom: 25px;
+      width: clamp(125px, 10%, 600px);
+      max-width: 90%;
+      margin: 25px auto;
     }
     .sweet-treats__description {
       font-family: "Lato", sans-serif;
@@ -42,11 +47,11 @@
     }
   }
   .sweet-treats__content {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
+    display: flex;
     align-items: center;
     gap: 1rem;
-    overflow: hidden;
+    padding: 0 15px;
+    position: relative;
   }
 
   .sweet-treats__list {
@@ -57,17 +62,16 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     transition: transform 0.5s ease-in-out;
+    width: 100%;
   }
 
   .sweet-treats__card {
     scroll-snap-align: center;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-bottom: 20px;
   }
 
   .product-card__image-wrapper {
@@ -83,9 +87,9 @@
   }
 
   .product-card__image {
-    max-width: 100%;
-    height: 192px;
-    width: 232px;
+    height: 100%;
+    width: 100%;
+    overflow: cover;
   }
   .product-card__title {
     color: var(--white-default-color);
@@ -127,6 +131,10 @@
   @media (min-width: 600px) {
     .sweet-treats__list {
       grid-auto-columns: calc(50% - 1rem);
+    }
+    .sweet-treats__content {
+      flex-direction: row;
+      justify-content: center;
     }
   }
 
