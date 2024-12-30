@@ -34,7 +34,9 @@
 
 @media (min-width: 1280px) {
   .locations__wrapper {
-    margin: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -121,7 +123,7 @@
 
 @media (min-width: 1280px) {
   .locations__list {
-    margin: 50px 65px 0;
+    margin: 50px 15px 0;
   }
 }
 
@@ -175,7 +177,7 @@
 
 @media (min-width: 1280px) {
   .locations__carousel-images-wrapper {
-    width: calc(100% - 150px);
+    width: calc(100% - 54px);
   }
 }
 
@@ -288,7 +290,7 @@
 
 @media (min-width: 1280px) {
   .locations__carousel-control--left svg {
-    left: 32px;
+    left: -17px;
   }
 }
 
@@ -298,6 +300,6 @@
 
 @media (min-width: 1280px) {
   .locations__carousel-control--right svg {
-    right: 32px;
+    right: -17px;
   }
 }
