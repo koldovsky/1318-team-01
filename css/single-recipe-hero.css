@@ -1,15 +1,40 @@
 .single-recipe__background {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(18, 18, 19, 0.9)),
-    url(../assets/images/recipes/recipes-img/single-recipe-hero.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.single-recipe__background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/recipes/recipes-img/single-recipe-hero.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: grayscale(100%); /* Сірий лише для фону */
+  z-index: -1; /* За контентом */
+}
+
+.single-recipe__background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 32, 32, 0.93); /* Чорний фон з прозорістю */
+  z-index: -1; /* Також за контентом */
 }
 
 .single-header__hero {
   text-align: center;
   padding: 70px 0;
+  height: 20vh;
 
   .single-header__hero-title {
     font-family: "Prata", serif;
@@ -29,3 +54,23 @@
     }
   }
 }
+
+/*Global*/
+.single-recipe__header .header__nav,
+.single-recipe__header .header__clone-hype {
+  background: none;
+}
+.single-recipe__header .header__nav .header__menu-link,
+.single-recipe__header .header__nav .header__hype-text,
+.single-recipe__header .header__nav .header__hype-contacts,
+.single-recipe__header .header__nav .header__brand-link,
+.single-recipe__header .header__nav .header__navicon,
+.single-recipe__header .header__nav .header__navicon::before,
+.single-recipe__header .header__nav .header__navicon::after,
+.single-recipe__header .header__nav .header__social svg,
+.single-recipe__header .header__clone-hype .header__hype-link {
+  text-decoration: none;
+  color: white;
+  fill: white;
+}
+/*Global*/

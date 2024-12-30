@@ -5,7 +5,9 @@ const RecipeUtils = {
   renderHero(name) {
     return `<h3 class="single-header__hero-title">${name}</h3>
   <p class="single-header__hero-subtitle">
-    Home >
+    <a class="single-recipe__header__hero__home-link" href="index.html"
+                >Home > </a
+              >
     <span class="single-header__hero-subtitle-link"
       >${name}</span
     >
