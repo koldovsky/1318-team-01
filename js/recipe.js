@@ -2,8 +2,8 @@ const response = await fetch("api/recipes.json");
 const singleRecipes = await response.json();
 SetRecipes(singleRecipes);
 
-function recipesInfoClick(ev) {
-  ev.preventDefault(); // Запобігаємо переходу за посиланням
+export function recipesInfoClick(ev) {
+  ev.preventDefault();
   const singleRecipeId = ev.target.dataset.id;
   const singleRecipe = singleRecipes.find(
     (singleRecipe) => singleRecipe.id === singleRecipeId
@@ -11,7 +11,7 @@ function recipesInfoClick(ev) {
 
   if (singleRecipe) {
     localStorage.singleRecipe = JSON.stringify(singleRecipe);
-    window.location.href = `single-recipe-1.html`; // Перехід на сторінку
+    window.location.href = `single-recipe-1.html`;
   } else {
     console.error(`Recipe with ID ${singleRecipeId} not found.`);
   }
@@ -44,11 +44,18 @@ function SetRecipes(singleRecipes) {
   }
 
   const RecipesContainer = document.querySelector(".recipes");
-  RecipesContainer.innerHTML = recipesHTML;
+  if (RecipesContainer) {
+    RecipesContainer.innerHTML = recipesHTML;
 
-  document
-    .querySelectorAll(".recipes__card-button")
-    .forEach((link) => link.addEventListener("click", recipesInfoClick));
+    document
+      .querySelectorAll(".recipes__card-button")
+      .forEach((link) => link.addEventListener("click", recipesInfoClick));
+  } else {
+    console.error("Recipes container not found.");
+  }
 }
 
-SetRecipes(singleRecipes);
+// Викликаємо функцію після завантаження DOM
+document.addEventListener("DOMContentLoaded", () => {
+  SetRecipes(singleRecipes);
+});

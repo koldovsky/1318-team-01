@@ -1,6 +1,6 @@
 function init() {
-  import("./single-recipe-carousel.js");
   import("./single-recipe-pages.js");
+  import("./single-recipe-carousel.js");
 }
 
 const totalPartials = document.querySelectorAll(

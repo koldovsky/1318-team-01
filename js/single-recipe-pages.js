@@ -24,7 +24,7 @@ const RecipeUtils = {
   },
 
   renderDescription(descriptionDetails) {
-    return descriptionDetails.join(""); // Directly use the HTML strings
+    return descriptionDetails.join("");
   },
 
   renderImage({ src, alt, class: className }) {

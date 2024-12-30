@@ -187,5 +187,135 @@
         }
       ]
     }
+  },
+  {
+    "id": "4",
+    "image": {
+      "src": "assets/images/recipes/recipes-img/cinnamon.png",
+      "alt": "Cinnamon Swirl Rolls ",
+      "class": "recipe__description-img"
+    },
+    "name": "Cinnamon Swirl Rolls ",
+    "description": "A delightful combination of buttery croissants and cinnamon swirl rolls filled with creamy and flavorful ingredients.",
+    "recipeDetails": {
+      "ingredients": [
+        "4 large croissants, halved horizontally",
+        "2 cinnamon swirl rolls, sliced",
+        "1 cup cream cheese, softened",
+        "2 tbsp powdered sugar",
+        "1 tsp vanilla extract",
+        "1/2 cup fresh strawberries, sliced",
+        "1/4 cup honey or maple syrup"
+      ],
+      "descriptionDetails": [
+        "<h3 class=\"single-recipe__title\">Description</h3><hr /><p class=\"recipe__description-info\"><span class=\"recipe__description-info-accent\">Cinnamon Swirl Rolls Croissant Sandwich Delight</span> is a perfect balance of buttery croissants, sweet cinnamon rolls, and a creamy filling, ideal for breakfast or as a dessert treat.</p>",
+        "<p class=\"recipe__description-info\">This dish combines the richness of croissants with the sweet spice of cinnamon, making it a delightful option for special occasions or a luxurious brunch.</p>"
+      ]
+    },
+    "recipeInstructions": {
+      "steps": [
+        {
+          "title": "Prepare the Cream Cheese Filling",
+          "description": "In a bowl, mix the softened cream cheese, powdered sugar, and vanilla extract until smooth and creamy."
+        },
+        {
+          "title": "Assemble the Croissant Sandwiches",
+          "description": "Spread a generous layer of the cream cheese filling on the bottom half of each croissant."
+        },
+        {
+          "title": "Add Cinnamon Roll Slices",
+          "description": "Place a slice of cinnamon swirl roll on top of the cream cheese layer."
+        },
+        {
+          "title": "Add Strawberries",
+          "description": "Layer sliced strawberries on top of the cinnamon roll slice for a fresh and fruity touch."
+        },
+        {
+          "title": "Top with Croissant Halves",
+          "description": "Place the top half of the croissant over the strawberries to complete the sandwich."
+        },
+        {
+          "title": "Drizzle with Honey or Syrup",
+          "description": "Drizzle honey or maple syrup over the top for added sweetness before serving."
+        }
+      ],
+      "tips": [
+        {
+          "image": "assets/images/recipes/recipes-svg/tip.svg",
+          "alt": "Tip Icon",
+          "text": "For extra flavor, sprinkle a pinch of cinnamon sugar on the cream cheese filling before assembling."
+        },
+        {
+          "image": "assets/images/recipes/recipes-svg/tip.svg",
+          "alt": "Tip Icon",
+          "text": "Serve slightly warmed for a melty and luxurious texture."
+        }
+      ]
+    }
+  },
+  {
+    "id": "5",
+    "image": {
+      "src": "assets/images/recipes/recipes-img/croissant.png",
+      "alt": "Croissant Sandwich Delight",
+      "class": "recipe__description-img"
+    },
+    "name": "Croissant Sandwich Delight",
+    "description": "A savory and satisfying croissant sandwich filled with fresh greens, deli meat, and creamy dressing.",
+    "recipeDetails": {
+      "ingredients": [
+        "4 large croissants, halved",
+        "8 slices deli turkey or ham",
+        "4 slices Swiss or cheddar cheese",
+        "1 cup fresh lettuce leaves",
+        "1 medium tomato, sliced",
+        "1/4 cup mayonnaise or aioli",
+        "Salt and pepper to taste"
+      ],
+      "descriptionDetails": [
+        "<h3 class=\"single-recipe__title\">Description</h3><hr /><p class=\"recipe__description-info\"><span class=\"recipe__description-info-accent\">Croissant Sandwich Delight</span> is a versatile recipe that brings together flaky croissants, fresh vegetables, and delicious deli meat for a quick and satisfying meal.</p>",
+        "<p class=\"recipe__description-info\">Perfect for lunch or a light dinner, this sandwich is customizable to suit your taste preferences.</p>"
+      ]
+    },
+    "recipeInstructions": {
+      "steps": [
+        {
+          "title": "Prepare the Croissants",
+          "description": "Slice the croissants in half horizontally and optionally toast them for a crispier texture."
+        },
+        {
+          "title": "Spread the Dressing",
+          "description": "Spread a thin layer of mayonnaise or aioli on the bottom half of each croissant."
+        },
+        {
+          "title": "Add the Deli Meat",
+          "description": "Layer slices of turkey or ham on top of the dressing."
+        },
+        {
+          "title": "Add the Cheese",
+          "description": "Place a slice of Swiss or cheddar cheese over the deli meat."
+        },
+        {
+          "title": "Add the Vegetables",
+          "description": "Top with fresh lettuce leaves and slices of tomato. Sprinkle with salt and pepper to taste."
+        },
+        {
+          "title": "Assemble and Serve",
+          "description": "Place the top half of the croissant over the fillings. Serve immediately and enjoy!"
+        }
+      ],
+      "tips": [
+        {
+          "image": "assets/images/recipes/recipes-svg/tip.svg",
+          "alt": "Tip Icon",
+          "text": "For extra flavor, add a slice of avocado or a dollop of honey mustard."
+        },
+        {
+          "image": "assets/images/recipes/recipes-svg/tip.svg",
+          "alt": "Tip Icon",
+          "text": "Try heating the sandwich briefly in a sandwich press for a warm and melty texture."
+        }
+      ]
+    }
   }
 ]

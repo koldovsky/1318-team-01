@@ -1,4 +1,15 @@
-document.body.addEventListener("htmx:afterSettle", () => {
+import { recipesInfoClick } from "./recipe.js";
+
+document.body.addEventListener("htmx:afterSettle", async () => {
+  const response = await fetch("api/recipes.json");
+  const singleRecipes = await response.json();
+
+  // Спочатку додаємо елементи до DOM
+  setCarouselCardInfo(singleRecipes);
+
+  // Після додавання елементів у DOM, ініціалізуємо карусель
+  setupCarousel();
+
   const prevButton = document.querySelector(".prev");
   const nextButton = document.querySelector(".next");
 
@@ -8,13 +19,50 @@ document.body.addEventListener("htmx:afterSettle", () => {
   } else {
     console.error("Buttons .prev or .next not found in DOM after htmx load");
   }
-
-  setupCarousel();
 });
 
 let currentSlide = 0;
 let slidesToShow = 1;
 let slides = [];
+
+function setCarouselCardInfo(singleRecipes) {
+  let cardsHTML = singleRecipes
+    .map(
+      (singleRecipe) => `<article class="more-recipes__card">
+        <img
+          src="${singleRecipe.image.src}"
+          alt="${singleRecipe.image.alt}"
+          class="${singleRecipe.image.class}"
+        />
+        <h3 class="more-recipes__card-title">${singleRecipe.name}</h3>
+        <p class="more-recipes__card-ingredients">
+          <span class="more-recipes__card-ingredients-label">Ingredients:</span>
+          ${singleRecipe.description}
+        </p>
+        <a
+            href="single-recipe-${singleRecipe.id}.html"
+            class="recipes__card-button recipes__card-button--primary"
+            data-id="${singleRecipe.id}"
+          >
+            Read more
+          </a>
+
+        
+      </article>`
+    )
+    .join("");
+
+  const cardContainer = document.querySelector(".more-recipe__carousel-track");
+  if (!cardContainer) {
+    console.error("Carousel track container not found.");
+    return;
+  }
+  cardContainer.innerHTML = cardsHTML;
+
+  document
+    .querySelectorAll(".recipes__card-button")
+    .forEach((link) => link.addEventListener("click", recipesInfoClick));
+}
 
 function updateSlidesToShow() {
   slidesToShow = window.innerWidth >= 750 ? 2 : 1;
@@ -32,13 +80,13 @@ function updateCarousel() {
     return;
   }
 
-  const slideWidth = slides[0]?.offsetWidth || 0; // Ensure slides[0] exists
+  const slideWidth = slides[0]?.offsetWidth || 0;
   const gap = 32;
 
   if (currentSlide >= slides.length - 2) {
-    currentSlide = 0; // Reset to the first slide if at the end
+    currentSlide = 0;
   } else if (currentSlide < 0) {
-    currentSlide = slides.length - 1; // Move to the last slide if before the first
+    currentSlide = slides.length - 1;
   }
 
   track.style.transform = `translateX(-${currentSlide * (slideWidth + gap)}px)`;
