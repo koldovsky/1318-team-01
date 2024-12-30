@@ -9,7 +9,7 @@ const RecipeUtils = {
     <span class="single-header__hero-subtitle-link"
       >${name}</span
     >
-  </p>`.join("");
+  </p>`;
   },
 
   renderIngredients(ingredients) {
@@ -66,12 +66,18 @@ const RecipeUtils = {
 };
 
 // Універсальна функція для рендерингу всіх деталей рецепта
-const renderRecipeDetails = (recipe) => {
+export const renderRecipeDetails = (recipe) => {
   if (!recipe) {
     console.error("Recipe not found or undefined.");
     return;
   }
 
+  //Render hero
+  RecipeUtils.renderElement(
+    ".single-header__hero",
+    RecipeUtils.renderHero(recipe.name),
+    "hero header not found in the DOM."
+  );
   // Render ingredients
   RecipeUtils.renderElement(
     ".recipe__ingredients-list",
@@ -107,7 +113,3 @@ const renderRecipeDetails = (recipe) => {
     "Tips container not found in the DOM."
   );
 };
-
-// Пошук рецепта з ID "2" та рендеринг
-const recipe = singleRecipes.find((r) => r.id === "2");
-renderRecipeDetails(recipe);
