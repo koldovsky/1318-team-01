@@ -20,45 +20,57 @@
     ></script>
   </head>
   <body>
-    <header class="header single-recipe__background">
-      <div class="header__background">
-        <nav
-          class="header__nav single-header__nav"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="global.header-nav.partial.html"
-        ></nav>
-        <div
-          class="header__hero-single-recipe-1"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="single-recipe-1.single-hero.partial.html"
-        ></div>
+    <header class="single-recipe__header header">
+      <div class="single-recipe__header__wrapper">
+        <div class="single-recipe__background">
+          <nav
+            class="header__nav"
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="global.header-nav.partial.html"
+          ></nav>
+          <div
+            class="header__hero-single-recipe-1"
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="single-recipe-1.single-hero.partial.html"
+          ></div>
+        </div>
       </div>
     </header>
+    <main>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="single-recipe-1.recipe-details.partial.html"
+      ></section>
 
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="single-recipe-1.recipe-details.partial.html"
-    ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="single-recipe-1.recipe-instruction.partial.html"
+      ></section>
 
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="single-recipe-1.recipe-instruction.partial.html"
-    ></section>
-
-    <section
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="single-recipe-1.more-recipes.partial.html"
-    ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="single-recipe-1.more-recipes.partial.html"
+      ></section>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.section-locations.partial.html"
+      ></section>
+    </main>
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
     ></footer>
     <script type="module" src="js/single-recipe.js"></script>
+    <script type="module" src="js/single-recipe-carousel.js"></script>
+    <script type="module" src="js/single-recipe-pages.js"></script>
+
+    <script type="module" src="js/single.recipe-show-pages.js"></script>
   </body>
 </html>

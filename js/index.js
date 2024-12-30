@@ -2,6 +2,9 @@ function init() {
   import("./header.js");
   import("./recipe.js");
   import("./sweet-treats-carousel.js");
+  import("./locations-carousel.js");
+  import("./chef-advantages-carousel.js");
+  import("./chef-advantages-list.js");
 
 }
 

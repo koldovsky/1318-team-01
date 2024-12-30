@@ -85,7 +85,8 @@
         font-weight: 300;
         color: var(--white-default-color);
       }
-      .recipe__card-divider {
+      hr.recipe__card-divider {
+        margin: 0;
         border: 2px solid var(--devider-color);
         height: 2px;
         width: 15%;

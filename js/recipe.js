@@ -1,53 +1,54 @@
-const recipes = [
-  {
-    id: "1",
-    image: "assets/images/recipes/recipes-img/herb-bruschetta.webp",
-    name: "Garlic & Herb Bruschetta",
-    description:
-      " 1 Classic Baguette; 2 ripe tomatoes, diced; 2 cloves garlic, minced; Fresh basil leaves, chopped; 2 tbsp olive oil.",
-  },
+const response = await fetch("api/recipes.json");
+const singleRecipes = await response.json();
+SetRecipes(singleRecipes);
 
-  {
-    id: "2",
-    image: "assets/images/recipes/recipes-img/multigrain-bread.webp",
-    name: "Multigrain Bread Pudding",
-    description:
-      " 1 Classic Baguette; 2 ripe tomatoes, diced; 2 cloves garlic, minced; Fresh basil leaves, chopped; 2 tbsp olive oil.",
-  },
-  {
-    id: "3",
-    image: "assets/images/recipes/recipes-img/avocado-toast.webp",
-    name: "Sourdough Avocado Toast",
-    description:
-      " 1 Sourdough Bread, sliced; 1 large ripe avocado; 1 tbsp lemon; 1 tbsp olive oil; Salt and pepper, to taste.",
-  },
-];
+function recipesInfoClick(ev) {
+  ev.preventDefault(); // Запобігаємо переходу за посиланням
+  const singleRecipeId = ev.target.dataset.id;
+  const singleRecipe = singleRecipes.find(
+    (singleRecipe) => singleRecipe.id === singleRecipeId
+  );
 
-function SetRecipes(recipes) {
-  let recipesHTML = "";
-  for (const recipe of recipes) {
-    recipesHTML += `
-        <article class="recipe__card">
-      <img
-        src="${recipe.image}"
-        alt="Herb Bruschetta"
-        class="recipe__card-img"
-      />
-      <h3 class="recipe__card-title">${recipe.name}</h3>
-      <hr class="recipe__card-divider" />
-      <p class="recipe__card-ingredients">
-        <span class="recipe__card-ingredients-label">Ingredients:</span> ${recipe.description}
-      </p>
-      <a
-        href="single-recipe-1.html"
-        class="recipes__card-button recipes__card-button--primary"
-        >Read more</a
-      >
-    </article>
-    `;
+  if (singleRecipe) {
+    localStorage.singleRecipe = JSON.stringify(singleRecipe);
+    window.location.href = `single-recipe-1.html`; // Перехід на сторінку
+  } else {
+    console.error(`Recipe with ID ${singleRecipeId} not found.`);
   }
-  const RecipesContainer = document.querySelector(".recipes");
-  RecipesContainer.innerHTML = recipesHTML;
 }
 
-SetRecipes(recipes);
+function SetRecipes(singleRecipes) {
+  let recipesHTML = "";
+  for (const singleRecipe of singleRecipes) {
+    recipesHTML += `
+         <article class="recipe__card">
+          <img
+            src="${singleRecipe.image.src}"
+            alt="${singleRecipe.image.alt}"
+            class="${singleRecipe.image.class}"
+          />
+          <h3 class="recipe__card-title">${singleRecipe.name}</h3>
+          <hr class="recipe__card-divider" />
+          <p class="recipe__card-ingredients">
+            <span class="recipe__card-ingredients-label">Ingredients:</span> ${singleRecipe.description.trim()}
+          </p>
+          <a
+            href="single-recipe-${singleRecipe.id}.html"
+            class="recipes__card-button recipes__card-button--primary"
+            data-id="${singleRecipe.id}"
+          >
+            Read more
+          </a>
+        </article>
+    `;
+  }
+
+  const RecipesContainer = document.querySelector(".recipes");
+  RecipesContainer.innerHTML = recipesHTML;
+
+  document
+    .querySelectorAll(".recipes__card-button")
+    .forEach((link) => link.addEventListener("click", recipesInfoClick));
+}
+
+SetRecipes(singleRecipes);

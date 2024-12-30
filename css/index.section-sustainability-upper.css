@@ -1,3 +1,7 @@
+.sustainability__background--image {
+  background-image: url("../assets/images/sustainability/sustainability_upper_background_image_new.webp");
+}
+
 .section--two-columns {
   display: flex;
   flex-wrap: wrap;
@@ -7,6 +11,8 @@
 .section__column {
   flex: 1;
   min-width: 200px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .section__column--left {
