@@ -1,25 +1,11 @@
 const response = await fetch("api/recipes.json");
 const singleRecipes = await response.json();
-SetRecipes(singleRecipes.slice(0, 3));
-
-export function recipesInfoClick(ev) {
-  ev.preventDefault();
-  const singleRecipeId = ev.target.dataset.id;
-  const singleRecipe = singleRecipes.find(
-    (singleRecipe) => singleRecipe.id === singleRecipeId
-  );
-
-  if (singleRecipe) {
-    localStorage.singleRecipe = JSON.stringify(singleRecipe);
-    window.location.href = `single-recipe-1.html`;
-  } else {
-    console.error(`Recipe with ID ${singleRecipeId} not found.`);
-  }
-}
+SetRecipes(singleRecipes);
 
 function SetRecipes(singleRecipes) {
+  const recipesToShow = singleRecipes.slice(0, 3);
   let recipesHTML = "";
-  for (const singleRecipe of singleRecipes) {
+  for (const singleRecipe of recipesToShow) {
     recipesHTML += `
          <article class="recipe__card">
           <img
@@ -59,3 +45,18 @@ function SetRecipes(singleRecipes) {
 document.addEventListener("DOMContentLoaded", () => {
   SetRecipes(singleRecipes);
 });
+
+export function recipesInfoClick(ev) {
+  ev.preventDefault();
+  const singleRecipeId = ev.target.dataset.id;
+  const singleRecipe = singleRecipes.find(
+    (singleRecipe) => singleRecipe.id === singleRecipeId
+  );
+
+  if (singleRecipe) {
+    localStorage.singleRecipe = JSON.stringify(singleRecipe);
+    window.location.href = `single-recipe-1.html`;
+  } else {
+    console.error(`Recipe with ID ${singleRecipeId} not found.`);
+  }
+}
