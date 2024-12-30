@@ -2,7 +2,6 @@ function init() {
   import("./header.js");
   import("./recipe.js");
   import("./sweet-treats-carousel.js");
-  import("./contacts.js");
 
 }
 
