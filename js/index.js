@@ -2,8 +2,8 @@ function init() {
   import("./header.js");
   import("./recipe.js");
   import("./sweet-treats-carousel.js");
+  import("./locations-carousel.js");
   import("./contacts.js");
-
 }
 
 const totalPartials = document.querySelectorAll(
