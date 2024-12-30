@@ -1,6 +1,6 @@
 const response = await fetch("api/recipes.json");
 const singleRecipes = await response.json();
-SetRecipes(singleRecipes);
+SetRecipes(singleRecipes.slice(0, 3));
 
 export function recipesInfoClick(ev) {
   ev.preventDefault();
