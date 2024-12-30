@@ -3,7 +3,9 @@ function init() {
   import("./recipe.js");
   import("./sweet-treats-carousel.js");
   import("./locations-carousel.js");
-  import("./contacts.js");
+  import("./chef-advantages-carousel.js");
+  import("./chef-advantages-list.js");
+
 }
 
 const totalPartials = document.querySelectorAll(

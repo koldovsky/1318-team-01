@@ -118,7 +118,7 @@
   font-style: normal;
   display: block;
 }
-.contacts__faq__text{
+.contacts__faq__pararagraph{
   margin-top: 25px;
   color: rgb(195, 195, 195);
   font-family: "Lato", serif;
@@ -153,6 +153,9 @@
   margin-left: 18px;
   overflow: visible;
 }
+.contacts__btn__wrap.active .contacts__faq__arrow-svg{
+  transform: rotate(180deg);
+}
 .contacts__accordion{
   width: 100%;
   text-align: left;
@@ -164,14 +167,16 @@
 
 }
 .contacts__panel{
-  display: none;
-  margin-top: 20px;
+  max-height: 0;
+  overflow: hidden;
 }
 .contacts__panel.show{
-  display: block;
-  height: 100%;
+  margin-top: 20px;
+  max-height: 180px;
   max-width: 100%;
   word-wrap: break-word;
+  transition: height .4s ease, margin-top .4s ease;
+  
 }
 .contacts__panel__text{
   color: rgb(195, 195, 195);
@@ -188,7 +193,7 @@
 .contacts__form{
   background-color: #2b2b2b;
   text-align: center;
-  padding: 39px;
+  padding: 50px 39px 39px 39px;
   margin-top: 60px;
 }
 .contacts__input-wrap{
@@ -207,6 +212,7 @@
   font-weight: 600;
   line-height: 16.8px;
   font-size: 14px;
+  color: #fff;
 }
 .contact__username::placeholder{
   color: #8f8e8e;
@@ -221,17 +227,19 @@
   appearance: none;
   background: #212020;
   font-family: "Lato", serif;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 16.8px;
   font-size: 14px;
   height: 150px;
   resize: none;
+  color: #fff;
 }
 .contact__type-s::placeholder{
   color: #8f8e8e;
+  font-weight: 400;
   
 }
-.contacts__btn__wrap{
+.contacts__submit__wrap{
   margin-top: 56px;
 }
 .contacts__submit{
@@ -247,8 +255,65 @@
   color: #fff;
   font-size: 15px;
   line-height: 19.5px;
+  transition: color 0.2s ease-in, background-color 0.2s ease-in, border-color 0.2s ease-in, box-shadow 0.2s ease-in;
 
 }
+.contacts__submit:hover{
+  background-color: #F2A64B;
+}
+.contacts__faq__accordions__block{
+  margin-top: 20px;
+}
+
+@media(min-width:768px){
+  .contacts__faq__wrapper{
+    display: flex;
+    gap:60px;
+    max-width: 1234px;
+    padding: 105px 32px;
+  }
+  .contacts__faq__text{
+    flex-basis: 50%;
+  }
+  .contacts__form{
+    flex-basis: 50%;
+  }
+  .contacts__faq__title{
+    font-size: 26px;
+    font-weight: normal;
+    line-height: 26px;
+  }
+  .contacts__faq__question{
+    font-size: 38px;
+    line-height: 49.4px;
+    display: block;
+  }
+  .contacts__form{
+    margin-top: 0px;
+    padding: 71px 60px 60px 60px;
+  }
+  
+
+}
+@media(min-width:992px){
+  .contacts__faq__wrapper{
+    max-width: 1250px;
+    padding: 120px 40px;
+  }
+  .contacts__faq__title{
+    font-size: 38px;
+  }
+  .contacts__faq__question{
+    font-size: 42px;
+  }
+}
+@media (min-width: 1280px) {
+  .contacts__faq__wrapper{
+    max-width: 1200px;
+    padding: 120px 15px;
+  }
+}
+
 /*-----*/
 /**/
 @media (min-width: 992px) {

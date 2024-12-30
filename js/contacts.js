@@ -1,21 +1,18 @@
-const acc = document.getElementsByClassName("contacts__btn__wrap");
+function init() {
+    import("./header.js");
+    import("./locations-carousel.js");
+    import("./contacts__form.js")
 
-for (const item of acc) {
-    item.onclick = function() {
-        // Закриваємо всі інші елементи
-        for (const otherItem of acc) {
-            if (otherItem !== this) { // Перевіряємо, чи це не той самий елемент
-                otherItem.classList.remove("active");
-                if (otherItem.nextElementSibling) {
-                    otherItem.nextElementSibling.classList.remove("show");
-                }
-            }
-        }
-
-        // Відкриваємо/закриваємо поточний елемент
-        this.classList.toggle("active");
-        if (this.nextElementSibling) {
-            this.nextElementSibling.classList.toggle("show");
-        }
-    };
-}
+  
+  }
+  
+  const totalPartials = document.querySelectorAll(
+    '[hx-trigger="load"], [data-hx-trigger="load"]'
+  ).length;
+  let loadedPartialsCount = 0;
+  
+  document.body.addEventListener("htmx:afterOnLoad", () => {
+    loadedPartialsCount++;
+    if (loadedPartialsCount === totalPartials) init();
+  });
+  

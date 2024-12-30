@@ -54,7 +54,7 @@
               <h2 class="contacts__faq__title">Faq</h2>
               <p class="contacts__faq__question">Have Questions?</p>
               <p class="contacts__faq__another-text">Fill out the form on the right or browse through the section below.</p>
-              <p class="contacts__faq__text">
+              <p class="contacts__faq__pararagraph">
                 Whether you’re interested in placing an order, learning more
                 about our catering services, or just want to ask a question,
                 feel free to reach out. Our team is here to help make your
@@ -147,14 +147,14 @@
                        
             </div>
           </div>
-          <div class="contacts__form">
+          <form id="contacts__form"  class="contacts__form">
             <div class="contacts__input-wrap"><input type="text" id="contactsName" class="contact__username" placeholder="Enter your full name*"></div>
             <div class="contacts__input-wrap"><input type="tel" id="contactsTel" class="contact__username" placeholder="Enter your phone number*"></div>
             <div class="contacts__input-wrap"><input type="email" id="contactEmail" class="contact__username" placeholder="Enter your e-mail*"></div>
-            <div class="contact__text-area__wrap"><textarea class="contact__type-s" name="contact__type" id="contact__type" placeholder="Type your message"></textarea></div>
-            <div class="contacts__btn__wrap"><button class="contacts__submit">Send</button></div>
+            <div class="contact__text-area__wrap"><textarea maxlength="500" class="contact__type-s" name="contact__type" id="contact__type" placeholder="Type your message"></textarea></div>
+            <div class="contacts__submit__wrap"><button type="submit" class="contacts__submit">Send</button></div>
           </div>
-        </div>
+        </form>
       </section>
       <section class="section-contacts__map">
         <iframe
@@ -176,6 +176,7 @@
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
     ></footer>
-    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/contacts.js"></script>
+    
   </body>
 </html>
