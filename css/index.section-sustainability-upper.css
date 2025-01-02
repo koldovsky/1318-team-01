@@ -1,25 +1,22 @@
-.sustainability__background--image {
+.block--two-columns {
   background-image: url("../assets/images/sustainability/sustainability_upper_background_image_new.webp");
-}
-
-.section--two-columns {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.section__column {
+.block__column {
   flex: 1;
   min-width: 200px;
   margin-left: 100px;
   margin-right: 100px;
 }
 
-.section__column--left {
+.block__column--left {
   /* no styles so far */
 }
 
-.section__column--right {
+.block__column--right {
   /* no styles so far */
 }
 
