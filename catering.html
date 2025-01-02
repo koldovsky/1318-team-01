@@ -20,31 +20,36 @@
     ></script>
   </head>
   <body>
-    <header class="header header--catering">
-      <div class="header__background">
-        <nav
-          class="header__nav"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="global.header-nav.partial.html"
-        ></nav>
-        <div
-          class="catering__hero"
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="catering.hero-partial.html"
-        ></div>
+    <header class="catering__header header">
+      <div class="catering__header-background">
+        <div class="catering__header-main">
+          <nav
+            class="header__nav"
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="global.header-nav.partial.html"
+          ></nav>
+          <div class="catering__header-hero">
+            <h2 class="catering__header-hero-title">Catering</h2>
+            <p class="catering__header-hero-subtitle">
+              <a class="catering__header-home-link" href="index.html"
+                >Home > </a
+              ><span class="catering-span">Catering</span>
+            </p>
+          </div>
+        </div>
       </div>
     </header>
-
-    <section>
-      
-    </section>
+    <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.section-locations.partial.html"
+      ></section>
     <footer
       data-hx-trigger="load"
       data-hx-swap="outerHTML"
       data-hx-get="global.footer.partial.html"
     ></footer>
-    
+    <script type="module" src="./js/index.js"></script>
   </body>
 </html>
