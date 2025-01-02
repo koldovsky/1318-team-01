@@ -3,6 +3,8 @@
 }
 
 .block--two-columns {
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
