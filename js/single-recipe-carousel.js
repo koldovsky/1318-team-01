@@ -40,7 +40,7 @@ function setCarouselCardInfo(singleRecipes) {
           ${singleRecipe.description}
         </p>
         <a
-            href="single-recipe-${singleRecipe.id}.html"
+            href="single-recipe-1.html"
             class="recipes__card-button recipes__card-button--primary"
             data-id="${singleRecipe.id}"
           >
