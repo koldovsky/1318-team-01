@@ -1,5 +1,8 @@
-.block--two-columns {
+.block__sustainability {
   background-image: url("../assets/images/sustainability/sustainability_upper_background_image_new.webp");
+}
+
+.block--two-columns {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
