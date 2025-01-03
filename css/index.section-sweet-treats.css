@@ -13,6 +13,10 @@
     margin: 0 auto;
     padding: 24px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
   }
   .sweet-treats__header {
     display: flex;
@@ -53,7 +57,7 @@
   }
   .sweet-treats__content {
     display: flex;
-    overflow: hidden;
+    margin: 0 40px;
     position: relative;
     padding: 0 40px;
   }
@@ -67,6 +71,8 @@
     transition: transform 0.5s ease-in-out;
     width: 100%;
     grid-auto-columns: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   .sweet-treats__card {
@@ -146,11 +152,11 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
-  .sweet-treats__button-prev {
-    left: 0;
-  }
   .sweet-treats__button-next {
-    right: 0;
+    right: 0px;
+  }
+  .sweet-treats__button-prev {
+    left: 0px;
     transform: translateY(-50%) rotate(180deg);
   }
   .sweet-treats__button-prev svg,
@@ -162,17 +168,20 @@
     .sweet-treats__list {
       grid-auto-columns: calc(50% - 0.5rem);
     }
+
+    .sweet-treats__content {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 600px) {
     .sweet-treats__button-prev,
     .sweet-treats__button-next {
       background: var(--white-default-color);
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    }
-    .sweet-treats__content {
-      flex-direction: row;
-      justify-content: center;
+      width: 25px;
+      height: 25px;
     }
   }
 
@@ -180,10 +189,5 @@
     .sweet-treats__list {
       grid-auto-columns: calc(33.333% - 0.66rem);
     }
-  }
-
-  .sweet-treats__list {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
   }
 }
