@@ -1,0 +1,265 @@
+.about___catering{
+    padding-top: 90px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.catering-line-svg{
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+}
+.catering__line{
+    width: 100%;
+    height: 31px;
+}
+
+.about__catering-service, .about__catering-occasion{
+    padding: 0px 20px;
+}
+
+.about__catering-prof-service{
+    font-size: 34px;
+    font-family: "Prata", sans-serif;
+    font-style: normal;
+    color: var(--btn-hover-color);
+    line-height: 1.2;
+    margin: 0;
+    text-align: left;
+}
+
+.about__catering-title{
+    font-size: 14px;
+}
+
+.about__catering-question{
+    font-size: 19px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    color: var(--item-description-color);
+}
+
+.about__catering-range{
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    color: var(--recipe-text-color);
+    line-height: 1.5;
+}
+
+.about__catering-invitation{
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    color: var(--recipe-text-color);
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.about__catering-description, .about__catering-occasion-description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__catering-image{
+    margin-top: 60px;
+    display: block;
+    border: 10px solid rgb(49, 49, 49);
+}
+
+.about__catering-welcome{
+    font-size: 22px;
+    font-family: "Prata", sans-serif;
+    font-style: normal;
+    color: var(--btn-hover-color);
+    margin-top: 60px;
+}
+
+.about__catering-celebrations{
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    color: var(--recipe-text-color);
+    line-height: 1.5;
+}
+
+.about__catering-menus {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.about__catering-menus svg{
+    width: 40%;
+    height: 10%;
+    color: var(--title-color);
+}
+
+.about__catering-menus .main-title{
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    color: var(--title-color);
+    font-weight: 600;
+}
+.about__catering-menus .description-text{
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    color: var(--description-recipes-color);
+}
+.menus-kolosok{
+    transform: scale(0.22); 
+}
+.about__catering-custom{
+    height: auto;
+}
+
+
+
+
+
+/* Carousel */
+.catering__carousel {
+    position: relative;
+  }
+  
+  .catering__carousel-wrap-images {
+    overflow: hidden;
+    margin: 30px auto 0;
+    width: calc(100% - 4%);
+  }
+  
+  @media (min-width: 1280px) {
+    .lcatering__carousel-wrap-images {
+      width: calc(100% - 54px);
+    }
+  }
+  
+  .catering__carousel-images {
+    display: flex;
+    align-items: stretch;
+    transition: transform 0.5s ease;
+    
+  }
+
+  .catering__carousel-item {
+    position: relative;
+    flex: 0 0 100%;
+    padding: 40px 15px 60px;
+  }
+  
+  @media (min-width: 768px) {
+    .catering__carousel-item {
+      flex: 0 0 calc(100% / 2);
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .catering__carousel-item {
+      flex: 0 0 calc(100% / 4);
+    }
+  }
+  
+  .item-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 30px;
+    /* margin-bottom: 60px; */
+  }
+
+  .description-of-dishes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catering__carousel-desserts-title{
+    font-size: 22px;
+    font-family: "Prata", sans-serif;
+    font-style: normal;
+    color: var(--btn-hover-color);
+  }
+
+  .catering__carousel-desserts-description{
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    color: var(--recipe-text-color);
+    text-align: center;
+  }
+
+  .catering__carousel-image {
+    object-fit: cover;
+    width: 120px;
+    padding-bottom: 20px;
+  }
+  
+  .catering__carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0px 24px;
+  }
+
+  .catering__carousel-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    background: #fff;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    opacity: 0.85;
+    transition: opacity 0.2s ease-out;
+  }
+  
+  @media (min-width: 1280px) {
+      .catering__carousel-button {
+        background: none;
+      }
+    }
+  
+  .catering__carousel-buttons:hover {
+    opacity: 1;
+  }
+  
+  .catering__carousel-buttons svg {
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    fill: #291d1d;
+  }
+  @media (min-width: 1280px) {
+    .catering__carousel-buttons svg {
+      fill: #fff;
+      top: 0;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  .catering__carousel-button-left svg {
+    left: 6px;
+    transform: rotate(180deg);
+    color: #fff;
+  }
+  
+  @media (min-width: 1280px) {
+    .catering__carousel-button-left svg {
+      left: -17px;
+    }
+  }
+  
+  .catering__carousel-button-right svg {
+    right: 6px;
+  }
+  
+  @media (min-width: 1280px) {
+    .catering__carousel-button-right svg {
+      right: -17px;
+    }
+  }

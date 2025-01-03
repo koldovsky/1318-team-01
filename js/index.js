@@ -5,6 +5,7 @@ function init() {
   import("./locations-carousel.js");
   import("./chef-advantages-carousel.js");
   import("./chef-advantages-list.js");
+  import("./catering.js");
 
 }
 

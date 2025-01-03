@@ -1,3 +1,8 @@
+.about___catering{
+  max-width: 1200px;
+  margin: auto;
+}
+
 .catering__header-background::before{ 
   content: "";
   position: absolute;
@@ -68,23 +73,7 @@
   font-weight: 400;
   color: var(--advantages-description-color);
 }
-/*.header--catering {
-    background-image: linear-gradient(#1f1f208c, #12121399), url("../assets/images/catering/background_catering.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;  
-  }
 
-  /*section{
-    background-color: rgba(0, 0, 0, 0.8);
-  }*/
-
-  /*.catering__hero{
-    max-width: 1200px;
-    margin: auto;
-  }
-*/
 .catering__header .header__nav, .catering__header .header__clone-hype {
     background: none;
   }
@@ -106,3 +95,5 @@
          background-color: none;
       }
   }
+
+  
