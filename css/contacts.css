@@ -89,18 +89,22 @@
 }
 
 /*Faq Section*/
-.contacts__faq__wrapper{
+.contacts__faq {
+  background: linear-gradient(rgba(28, 28, 28, 0.95), rgba(28, 28, 28, 0.95)),
+    url(../assets/images/steps/background.jpg);
+}
+.contacts__faq__wrapper {
   margin: 0 auto;
   max-width: 1218px;
   padding: 90px 24px;
 }
-.contacts__faq__title{
+.contacts__faq__title {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
   display: block;
 }
-.contacts__faq__question{
+.contacts__faq__question {
   margin-top: 20px;
   font-size: 34px;
   font-family: "Prata", serif;
@@ -108,9 +112,9 @@
   line-height: 44.2px;
   font-style: normal;
 }
-.contacts__faq__another-text{
+.contacts__faq__another-text {
   margin-top: 25px;
-  color: rgb(215, 215, 215);
+  color: var(--item-description-color);
   font-family: "Lato", serif;
   font-size: 19px;
   font-weight: 700;
@@ -118,9 +122,9 @@
   font-style: normal;
   display: block;
 }
-.contacts__faq__pararagraph{
+.contacts__faq__pararagraph {
   margin-top: 25px;
-  color: rgb(195, 195, 195);
+  color: var(--advantages-description-color);
   font-family: "Lato", serif;
   font-size: 17px;
   font-style: normal;
@@ -130,16 +134,15 @@
   font-style: normal;
 }
 /*----------------------------------------------*/
-.contacts__btn__wrap{
+.contacts__btn__wrap {
   display: flex;
   align-items: center;
-  
 }
-.contacts__faq__for-line{
- position: relative;
- padding: 20px 0px;
+.contacts__faq__for-line {
+  position: relative;
+  padding: 20px 0px;
 }
-.contacts__faq__for-line::after{
+.contacts__faq__for-line::after {
   position: absolute;
   content: " ";
   bottom: 0;
@@ -147,16 +150,15 @@
   left: 0;
   height: 1px;
   background: #4d4d4d;
-  
 }
-.contacts__faq__arrow-svg{
+.contacts__faq__arrow-svg {
   margin-left: 18px;
   overflow: visible;
 }
-.contacts__btn__wrap.active .contacts__faq__arrow-svg{
+.contacts__btn__wrap.active .contacts__faq__arrow-svg {
   transform: rotate(180deg);
 }
-.contacts__accordion{
+.contacts__accordion {
   width: 100%;
   text-align: left;
   font-size: 22px;
@@ -164,21 +166,19 @@
   font-weight: 400;
   line-height: 1.3;
   font-style: normal;
-
 }
-.contacts__panel{
+.contacts__panel {
   max-height: 0;
   overflow: hidden;
 }
-.contacts__panel.show{
+.contacts__panel.show {
   margin-top: 20px;
   max-height: 180px;
   max-width: 100%;
   word-wrap: break-word;
-  transition: height .4s ease, margin-top .4s ease;
-  
+  transition: height 0.4s ease, margin-top 0.4s ease;
 }
-.contacts__panel__text{
+.contacts__panel__text {
   color: rgb(195, 195, 195);
   font-family: "Lato", serif;
   font-size: 17px;
@@ -186,20 +186,18 @@
   font-style: normal;
   display: block;
   line-height: 1.5;
-  
-
 }
 /*Form*/
-.contacts__form{
+.contacts__form {
   background-color: #2b2b2b;
   text-align: center;
   padding: 50px 39px 39px 39px;
   margin-top: 60px;
 }
-.contacts__input-wrap{
+.contacts__input-wrap {
   margin-bottom: 24px;
 }
-.contact__username{
+.contact__username {
   width: 100%;
   border-radius: 25px;
   padding: 13px 37px;
@@ -212,12 +210,12 @@
   font-weight: 600;
   line-height: 16.8px;
   font-size: 14px;
-  color: #fff;
+  color: var(--white-default-color);
 }
-.contact__username::placeholder{
+.contact__username::placeholder {
   color: #8f8e8e;
 }
-.contact__type-s{
+.contact__type-s {
   width: 100%;
   border-radius: 25px;
   padding: 13px 37px;
@@ -232,17 +230,16 @@
   font-size: 14px;
   height: 150px;
   resize: none;
-  color: #fff;
+  color: var(--white-default-color);
 }
-.contact__type-s::placeholder{
+.contact__type-s::placeholder {
   color: #8f8e8e;
   font-weight: 400;
-  
 }
-.contacts__submit__wrap{
+.contacts__submit__wrap {
   margin-top: 56px;
 }
-.contacts__submit{
+.contacts__submit {
   width: 100%;
   border-radius: 25px;
   padding: 13px 37px;
@@ -252,63 +249,61 @@
   display: inline-block;
   font-family: "Lato", serif;
   font-weight: 700;
-  color: #fff;
+  color: var(--white-default-color);
   font-size: 15px;
   line-height: 19.5px;
-  transition: color 0.2s ease-in, background-color 0.2s ease-in, border-color 0.2s ease-in, box-shadow 0.2s ease-in;
-
+  transition: color 0.2s ease-in, background-color 0.2s ease-in,
+    border-color 0.2s ease-in, box-shadow 0.2s ease-in;
 }
-.contacts__submit:hover{
-  background-color: #F2A64B;
+.contacts__submit:hover {
+  background-color: #f2a64b;
 }
-.contacts__faq__accordions__block{
+.contacts__faq__accordions__block {
   margin-top: 20px;
 }
 
-@media(min-width:768px){
-  .contacts__faq__wrapper{
+@media (min-width: 768px) {
+  .contacts__faq__wrapper {
     display: flex;
-    gap:60px;
+    gap: 60px;
     max-width: 1234px;
     padding: 105px 32px;
   }
-  .contacts__faq__text{
+  .contacts__faq__text {
     flex-basis: 50%;
   }
-  .contacts__form{
+  .contacts__form {
     flex-basis: 50%;
   }
-  .contacts__faq__title{
+  .contacts__faq__title {
     font-size: 26px;
     font-weight: normal;
     line-height: 26px;
   }
-  .contacts__faq__question{
+  .contacts__faq__question {
     font-size: 38px;
     line-height: 49.4px;
     display: block;
   }
-  .contacts__form{
+  .contacts__form {
     margin-top: 0px;
     padding: 71px 60px 60px 60px;
   }
-  
-
 }
-@media(min-width:992px){
-  .contacts__faq__wrapper{
+@media (min-width: 992px) {
+  .contacts__faq__wrapper {
     max-width: 1250px;
     padding: 120px 40px;
   }
-  .contacts__faq__title{
+  .contacts__faq__title {
     font-size: 38px;
   }
-  .contacts__faq__question{
+  .contacts__faq__question {
     font-size: 42px;
   }
 }
 @media (min-width: 1280px) {
-  .contacts__faq__wrapper{
+  .contacts__faq__wrapper {
     max-width: 1200px;
     padding: 120px 15px;
   }
@@ -339,24 +334,22 @@
   }
 }
 
-
-
-
 /*Global*/
-.contacts__header .header__nav,.contacts__header .header__clone-hype  {
+.contacts__header .header__nav,
+.contacts__header .header__clone-hype {
   background: none;
 }
 .contacts__header .header__nav .header__menu-link,
-  .contacts__header .header__nav .header__hype-text,
-  .contacts__header .header__nav .header__hype-contacts,
-  .contacts__header .header__nav .header__brand-link,
-  .contacts__header .header__nav .header__navicon,
-  .contacts__header .header__nav .header__navicon::before,
-  .contacts__header .header__nav .header__navicon::after,
-  .contacts__header .header__nav .header__social svg,
-  .contacts__header .header__clone-hype .header__hype-link {
-    text-decoration: none;
-      color: white;
-      fill: white;
-  }
+.contacts__header .header__nav .header__hype-text,
+.contacts__header .header__nav .header__hype-contacts,
+.contacts__header .header__nav .header__brand-link,
+.contacts__header .header__nav .header__navicon,
+.contacts__header .header__nav .header__navicon::before,
+.contacts__header .header__nav .header__navicon::after,
+.contacts__header .header__nav .header__social svg,
+.contacts__header .header__clone-hype .header__hype-link {
+  text-decoration: none;
+  color: var(--white-default-color);
+  fill: var(--white-default-color);
+}
 /*Global*/
