@@ -1,5 +1,13 @@
 .block__sustainability {
   background-image: url("../assets/images/sustainability/sustainability_upper_background_image_new.webp");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  padding: 100px 0px 60px;
+  @media screen and (min-width:1100px) {
+    padding-top: 160px;
+  }
 }
 
 .block--two-columns {
