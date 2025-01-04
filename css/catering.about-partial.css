@@ -16,6 +16,16 @@
 
 .about__catering-service, .about__catering-occasion{
     padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+    @media (min-width: 768px){
+      flex-direction: row;
+      padding: 0px 30px;
+      margin-bottom: 50px;
+    }
+
 }
 
 .about__catering-prof-service{
@@ -26,10 +36,17 @@
     line-height: 1.2;
     margin: 0;
     text-align: left;
+
+    @media (min-width: 768px){
+      font-size: 38px;
+    }
 }
 
 .about__catering-title{
     font-size: 14px;
+    @media (min-width: 768px){
+      font-size: 26px;
+    }
 }
 
 .about__catering-question{
@@ -58,12 +75,29 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media (min-width: 768px){
+      max-width: 45%;
+    }
+
+}
+
+.about__catering-commitment{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .about__catering-image{
-    margin-top: 60px;
-    display: block;
-    border: 10px solid rgb(49, 49, 49);
+    @media (min-width: 768px){
+      margin: 0;
+      height: auto;
+    }
+}
+
+.about__catering-image img{
+  border: 10px solid rgb(49, 49, 49);
+  max-width: 100%;
 }
 
 .about__catering-welcome{
@@ -71,7 +105,6 @@
     font-family: "Prata", sans-serif;
     font-style: normal;
     color: var(--btn-hover-color);
-    margin-top: 60px;
 }
 
 .about__catering-celebrations{
@@ -79,6 +112,7 @@
     font-family: "Lato", sans-serif;
     color: var(--recipe-text-color);
     line-height: 1.5;
+
 }
 
 .about__catering-menus {
@@ -88,9 +122,10 @@
 }
 
 .about__catering-menus svg{
-    width: 40%;
-    height: 10%;
-    color: var(--title-color);
+    width: 40px;
+    height: 50px;
+    color: var(--quote-icon-color);
+
 }
 
 .about__catering-menus .main-title{
@@ -104,16 +139,14 @@
     font-family: "Lato", sans-serif;
     font-style: italic;
     color: var(--description-recipes-color);
+
 }
 .menus-kolosok{
     transform: scale(0.22); 
 }
 .about__catering-custom{
-    height: auto;
+    max-width: 90%;
 }
-
-
-
 
 
 /* Carousel */
