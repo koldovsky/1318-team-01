@@ -9,12 +9,14 @@
 
 .header a {
     color: var(--btn-hover-color);
-    text-decoration: none;
 }
 
 .header__menu-link:hover{
     color: var(--title-color);
+}
 
+.header__menu-link{
+    text-decoration: none;
 }
 
 .header__background {
