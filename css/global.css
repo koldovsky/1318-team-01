@@ -32,6 +32,7 @@ font-family: "Lato", serif;
   --advantages-description-color: rgb(195, 195, 195);
   --hr-default-style: 1px solid var(--recipe-bg-color);
   --hr-section-divider: 3px solid rgb(87 87 87);
+  --st-carousel-numeration-color: rgb(63 62 62);
   scroll-behavior: smooth;
   background-color: var(--st-background-color);
 }
@@ -76,5 +77,3 @@ hr {
   border: var(--hr-default-style);
   margin-bottom: 48px;
 }
-
-

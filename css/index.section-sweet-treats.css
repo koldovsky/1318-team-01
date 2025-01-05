@@ -11,7 +11,7 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 24px;
+    padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -57,9 +57,15 @@
   }
   .sweet-treats__content {
     display: flex;
-    margin: 0 40px;
+    margin: 0 25px;
     position: relative;
-    padding: 0 40px;
+    padding: 0 25px;
+  }
+  .product-card__number {
+    font-weight: bold;
+    margin: 15px;
+    padding: 15px;
+    color: var(--st-carousel-numeration-color);
   }
 
   .sweet-treats__list {
@@ -90,7 +96,7 @@
     margin-bottom: 0.5rem;
     padding-bottom: 10px;
     width: 100%;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 3 / 3;
     overflow: hidden;
   }
   .product-card__details,
@@ -144,25 +150,27 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 2;
+    border: none;
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    background: transparent;
+    z-index: 2;
+    padding: 0;
   }
   .sweet-treats__button-next {
-    right: 0px;
+    right: 10px;
   }
   .sweet-treats__button-prev {
-    left: 0px;
+    left: 10px;
     transform: translateY(-50%) rotate(180deg);
   }
   .sweet-treats__button-prev svg,
   .sweet-treats__button-next svg {
     width: 25px;
     height: 25px;
+    fill: var(--white-default-color);
   }
   @media (min-width: 600px) {
     .sweet-treats__list {
@@ -175,13 +183,19 @@
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     .sweet-treats__button-prev,
     .sweet-treats__button-next {
       background: var(--white-default-color);
       border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+    .sweet-treats__button-prev svg,
+    .sweet-treats__button-next svg {
       width: 25px;
       height: 25px;
+      fill: var(--dark-default-color);
     }
   }
 
