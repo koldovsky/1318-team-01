@@ -161,7 +161,6 @@
     overflow: hidden;
     width: 100%;
     padding: 72px 24px;
-    border-bottom: var(--hr-default-style);
     border-top: var(--hr-default-style);
 
     .more-recipe__carousel-control {
@@ -204,7 +203,7 @@
       gap: 32px;
       .more-recipes__card {
         display: flex;
-        flex: 0 0 100%;
+        flex: 0 0 auto;
         flex-direction: column;
         align-items: flex-start;
         gap: 18px;

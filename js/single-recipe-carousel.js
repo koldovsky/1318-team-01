@@ -24,6 +24,7 @@ document.body.addEventListener("htmx:afterSettle", async () => {
 let currentSlide = 0;
 let slidesToShow = 1;
 let slides = [];
+const transitionTime = 500;
 
 function setCarouselCardInfo(singleRecipes) {
   let cardsHTML = singleRecipes
@@ -70,42 +71,6 @@ function updateSlidesToShow() {
 
   updateCarousel();
 }
-
-function updateCarousel() {
-  console.log(`Current slide: ${currentSlide}`);
-  const track = document.querySelector(".more-recipe__carousel-track");
-
-  if (!track || slides.length === 0) {
-    console.error("Carousel track or slides not found in DOM.");
-    return;
-  }
-
-  const slideWidth = slides[0]?.offsetWidth || 0;
-  const gap = 32;
-
-  if (currentSlide >= slides.length - 2) {
-    currentSlide = 0;
-  } else if (currentSlide < 0) {
-    currentSlide = slides.length - 1;
-  }
-
-  track.style.transform = `translateX(-${currentSlide * (slideWidth + gap)}px)`;
-}
-
-function prevSlide() {
-  console.log("Prev button clicked");
-
-  currentSlide = currentSlide > 0 ? currentSlide - 1 : slides.length - 3;
-  updateCarousel();
-}
-
-function nextSlide() {
-  console.log("Next button clicked");
-
-  currentSlide = currentSlide < slides.length - 1 ? currentSlide + 1 : 0;
-  updateCarousel();
-}
-
 function setupCarousel() {
   const track = document.querySelector(".more-recipe__carousel-track");
   slides = Array.from(document.querySelectorAll(".more-recipes__card"));
@@ -118,18 +83,21 @@ function setupCarousel() {
   // Remove existing clones
   slides = slides.filter((slide) => !slide.classList.contains("clone"));
 
-  // Add clones at the start and end for infinite looping
-  const clonesStart = slides.slice(-slidesToShow).map(cloneSlide);
-  const clonesEnd = slides.slice(0, slidesToShow).map(cloneSlide);
+  // Додаємо клони
+  const clonesStart = slides.map(cloneSlide);
+  const clonesEnd = slides.map(cloneSlide);
 
-  // Clear track and append new slides
-  track.innerHTML = "";
-  track.append(...clonesStart, ...slides, ...clonesEnd);
+  // Додаємо клони до DOM
+  clonesStart.forEach((clone) => track.appendChild(clone));
+  clonesEnd.forEach((clone) => track.insertBefore(clone, slides[0]));
 
-  // Update the slides array
+  // Оновлюємо масив слайдів
   slides = Array.from(track.children);
 
-  updateCarousel();
+  // Встановлюємо початкову позицію
+  const initialOffset = clonesStart.length;
+  currentSlide = initialOffset;
+  updateCarousel(false);
 }
 
 function cloneSlide(slide) {
@@ -138,7 +106,48 @@ function cloneSlide(slide) {
   return clone;
 }
 
-window.addEventListener("resize", () => {
-  setupCarousel();
-  updateSlidesToShow();
-});
+function updateCarousel(animate = true) {
+  console.log(`Current slide: ${currentSlide}`);
+  const track = document.querySelector(".more-recipe__carousel-track");
+  const slideWidth = slides[0]?.offsetWidth || 0;
+  const gap = 32;
+
+  if (!track) {
+    console.error("Carousel track or slides not found in DOM.");
+    return;
+  }
+
+  // Анімація
+  track.style.transition = animate
+    ? `transform ${transitionTime}ms ease`
+    : "none";
+  track.style.transform = `translateX(-${currentSlide * (slideWidth + gap)}px)`;
+
+  // Плавне перемикання до "оригінального" слайда
+  setTimeout(
+    () => {
+      if (currentSlide >= slides.length - slides.length / 3) {
+        currentSlide = slides.length / 3;
+        track.style.transition = "none";
+        track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      } else if (currentSlide < slides.length / 3) {
+        currentSlide = slides.length - (slides.length / 3) * 2;
+        track.style.transition = "none";
+        track.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+      }
+    },
+    animate ? transitionTime : 0
+  );
+}
+
+function nextSlide() {
+  currentSlide++;
+  updateCarousel();
+}
+
+function prevSlide() {
+  currentSlide--;
+  updateCarousel();
+}
+
+window.addEventListener("resize", () => updateCarousel(false));
