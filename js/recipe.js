@@ -36,8 +36,6 @@ function SetRecipes(singleRecipes) {
     document
       .querySelectorAll(".recipes__card-button")
       .forEach((link) => link.addEventListener("click", recipesInfoClick));
-  } else {
-    console.error("Recipes container not found.");
   }
 }
 

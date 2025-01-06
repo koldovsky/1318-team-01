@@ -33,9 +33,12 @@
 
 .single-header__hero {
   text-align: center;
-  padding: 70px 0;
-  height: 20vh;
+  padding: 40px 20px;
+  height: 35vh;
 
+  @media (min-width: 750px) {
+    height: 20vh;
+  }
   .single-header__hero-title {
     font-family: "Prata", serif;
     font-size: 42px;
@@ -46,6 +49,9 @@
   .single-header__hero-subtitle {
     font-size: 17px;
     font-family: "Lato", sans-serif;
+    .single-recipe__header__hero__home-link {
+      text-decoration: none;
+    }
     .single-header__hero-subtitle-link {
       text-decoration: underline;
       color: var(--title-color);
