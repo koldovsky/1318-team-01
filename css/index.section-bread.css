@@ -14,8 +14,8 @@
   align-items: center;
   width: 100%;
   padding: 120px 20px;
+  box-sizing: content-box;
 }
-
 .background-bread {
   max-width: 45%;
   background-color: #212020;
@@ -49,7 +49,6 @@
   color: #d0d0d0;
   margin-bottom: 30px;
   text-align: start;
-
 }
 
 .bread-item {
