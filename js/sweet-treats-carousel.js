@@ -8,26 +8,8 @@ let gap;
 
 function updateCarouselValues() {
   cardWidth = cards[0].offsetWidth;
-  gap = parseInt(window.getComputedStyle(list).gap);
+  gap = parseInt(window.getComputedStyle(list).gap) || 0;
 }
-
-nextButton.addEventListener("click", () => {
-  updateCarouselValues(); // Update values before scrolling
-  currentPosition++;
-  if (currentPosition >= cards.length) {
-    currentPosition = 0;
-  }
-  scrollToCard();
-});
-
-prevButton.addEventListener("click", () => {
-  updateCarouselValues(); // Update values before scrolling
-  currentPosition--;
-  if (currentPosition < 0) {
-    currentPosition = cards.length - 1;
-  }
-  scrollToCard();
-});
 
 function scrollToCard() {
   list.scrollTo({
@@ -35,3 +17,26 @@ function scrollToCard() {
     behavior: "smooth",
   });
 }
+
+nextButton.addEventListener("click", () => {
+  updateCarouselValues();
+
+  currentPosition++;
+  if (currentPosition >= cards.length) {
+    currentPosition = 0; 
+  }
+  scrollToCard();
+});
+
+prevButton.addEventListener("click", () => {
+  updateCarouselValues();
+
+  currentPosition--;
+  if (currentPosition < 0) {
+    currentPosition = cards.length - 1; 
+  }
+  scrollToCard();
+});
+
+window.addEventListener("resize", updateCarouselValues);
+updateCarouselValues();
