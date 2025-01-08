@@ -34,7 +34,7 @@
     opacity: 0.8;
 }
 
-/* @media (max-width: 624px) { added whole block media
+@media (max-width: 624px) { added whole block media
     .chef-message::after {
         background-size: auto 100%;
         background-position: left top;
@@ -47,13 +47,13 @@
         z-index: 1;
     }
 
-    .chef-message::before { added
+    .chef-message::before { /* added*/
         height: 70%;
     }
-} */
+}
 
-/* @media (min-width: 625px) { added from max 991 to min 625 */
-@media (max-width: 991px) { /* added from max 991 to min 625 */
+@media (min-width: 625px) { /* added from max 991 to min 625 */
+/* @media (max-width: 991px) { added from max 991 to min 625 */
     .chef-message::after {
         background-size: auto 100%;
         background-position: left top;
