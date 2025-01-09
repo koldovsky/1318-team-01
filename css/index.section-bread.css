@@ -16,6 +16,11 @@
   padding: 120px 20px;
   box-sizing: content-box;
 }
+@media (max-width: 1024px) {
+  .fresh-bread-menu {
+    padding: 20px 5px;
+  }
+}
 .background-bread {
   max-width: 45%;
   background-color: #212020;
@@ -23,10 +28,15 @@
   padding: 40px 30px;
   text-align: center;
 }
+@media (max-width: 1024px) {
+  .background-bread {
+    max-width: 60%;
+    padding: 20px 15px;
+  }
+}
 @media (max-width: 768px) {
   .background-bread {
     max-width: 90%;
-    padding: 20px 15px;
   }
 }
 .bread-title {
