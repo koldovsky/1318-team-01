@@ -5,6 +5,7 @@ function init() {
   import("./locations-carousel.js");
   import("./contacts.js");
   import("./catering.js");
+  import("./bread.js");
 
 }
 
