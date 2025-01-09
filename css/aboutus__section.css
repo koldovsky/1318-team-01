@@ -93,5 +93,18 @@
 .custom-bg {
   background-color: #212020; 
 }
+.credits-item {
+  text-align: center;
+  color: #fff;
+  background-color: #212020;
+  padding: 50px 0;
+}
+.carousel-caption {
+  position: static;
+  color: #ff7f50;
+}
+.carousel-caption p {
+  color: #fff;
+}
 
 
