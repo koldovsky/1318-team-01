@@ -1,65 +1,155 @@
+/* Стилі для контейнера секції */
 .section {
-    background: linear-gradient(rgba(37, 37, 37, 0.95), rgba(37, 37, 37, 0.95)),
-      url(../assets/images/steps/background.jpg);
-    padding: 90px 0;
-  }
-/*.section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    background-image: url(../assets/images/articlesfon.jpg); 
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    padding: 20px; 
+  background-size: 50% auto; 
+  background: linear-gradient(rgba(37, 37, 37, 0.95), rgba(37, 37, 37, 0.95)),
+    url(../assets/images/steps/background.jpg);
+  padding: 90px 0;
 }
-*/
+
+
 .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 900px;
-    height: 300px;
-    background-image: url('assets/images/title-background.jpg'); /* Фонове зображення для .title */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.image-details {
-    display: flex;
-    width: 70px;
-    height: 20px;
+
+.cards-container {
+  display: flex;
+  gap: 32px; 
+  overflow-x: auto; 
+  scroll-behavior: smooth; 
+  padding: 32px;
+  max-width: calc(3 * 300px + 2 * 32px); 
+  margin: 0 auto; 
+  scroll-snap-type: x mandatory; 
+  position: relative; 
+  
+    overflow-x: hidden; 
+    scrollbar-width: none; 
 }
 
-.cards {
-    display: flex;
-    justify-content: space-between;
-    width: 1200px;
-    margin: 0 auto;
-    background-image: url('assets/images/cards-background.jpg'); /* Фонове зображення для cards */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.cards-container::-webkit-scrollbar {
+    display: none; 
 }
+.card {
+  flex: 0 0 auto; 
+  width: 300px; 
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  box-shadow: none;
+  padding: 16px;
+  scroll-snap-align: start; 
+}
+
 
 .image-cards {
-    display: flex;
-    width: 300px;
-    height: 200px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
 }
 
-.card {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: start;
-    width: 350px;
-    background-image: url('assets/images/card-background.jpg'); /* Фонове зображення для кожної карточки */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+.card p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 40px;
+  width: 120px;
+  background-color: #995e32;
+  color: #ffffff;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+  margin-top: 30px;
+}
+
+.card a:hover {
+  background-color: #482b13;
+}
+
+
+.scroll-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  display: flex;
+  justify-content: space-between;  
+  width: 100%;
+  padding: 0 16px;
+  z-index: 10; 
+}
+
+.scroll-buttons button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  color: #007BFF;
+  cursor: pointer;
+  padding: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-buttons button:hover {
+  color: #0056b3;
+  transform: scale(1.2); 
+}
+
+
+.image-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  margin: 0 auto;
+}.section-title__details {
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px; 
+  font-weight: 100;
+  color: #995e32;
+}.section-subtitle__details {
+  font-family: 'Prata', sans-serif;
+  font-size: 35px; 
+  font-weight: 200;
+  color: #ffffff;
+}.section-text__details {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px; 
+  font-weight: 90;
+  color: #ffffff;
+}.cards-container_details {
+  font-family: 'Great Vibes', cursive;
+  font-size: 64px; 
+  font-weight: 600;
+  color: #995e32;
+}
+.cards-title__details {
+  font-family: 'Prata', sans-serif;
+  font-size: 35px; 
+  font-weight: 200;
+  color: #ffffff;
+}
+.cards-subtitle__details {
+  font-family: 'Lato', sans-serif;
+  font-size: 12px; 
+  font-weight: 90;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .section {
+      max-width: 750px;
+      margin: 0 auto;
+  }
+  .cards-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
 }
