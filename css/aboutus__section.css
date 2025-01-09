@@ -106,5 +106,15 @@
 .carousel-caption p {
   color: #fff;
 }
+.our-story__titlecolor{
+  color: #f39c12;
+}
+.image-container {
+  padding: 10px;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+}
 
 
