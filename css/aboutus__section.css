@@ -71,6 +71,9 @@
         color: #ccc;
       }
       
+      .bg_color_dark_gray{
+        background-color: #212020;
+      }
 }
 .our-story__wrap{
   max-width: 1218px;
@@ -87,3 +90,4 @@
   flex-direction: column;
   gap: 30px;
 }
+
