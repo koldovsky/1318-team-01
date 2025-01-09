@@ -70,7 +70,7 @@
         font-size: 1em;
         color: #ccc;
       }
-      
+
       .bg_color_dark_gray{
         background-color: #212020;
       }
@@ -90,4 +90,8 @@
   flex-direction: column;
   gap: 30px;
 }
+.custom-bg {
+  background-color: #212020; 
+}
+
 
